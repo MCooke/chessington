@@ -1,4 +1,4 @@
-![](/http://chessingtonholidays.merlinbreaks.co.uk/images/masterChessington/offers/banners/chessington-2nd-day-free.png)
+![2nd Day Free Banner](http://chessingtonholidays.merlinbreaks.co.uk/images/masterChessington/offers/banners/chessington-2nd-day-free.png)
 
 <p>For double the fun on your Chessington Holiday get a 2nd Day FREE. You'll save you up to &pound;96 per family, and enjoy your favourite rides and attractions again and again!</p>
 
