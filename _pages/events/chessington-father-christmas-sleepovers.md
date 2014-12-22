@@ -1,6 +1,6 @@
 # Father Christmas Sleepovers at Chessington
 
-![Father Christmas Sleepovers](/http://chessingtonholidays.merlinbreaks.co.uk/images/masterChessington/events/banners/chessington-father-christmas-sleepovers.png)
+![Father Christmas Sleepovers](http://chessingtonholidays.merlinbreaks.co.uk/images/masterChessington/events/banners/chessington-father-christmas-sleepovers.png)
 
 ## New for 2014
 ### 6th, 13th, 14th, 19th — 23rd December
