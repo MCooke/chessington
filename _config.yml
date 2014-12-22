@@ -12,8 +12,3 @@ prose:
         field:
           element: "hidden"
           value: "default"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
