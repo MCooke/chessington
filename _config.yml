@@ -1,2 +1,14 @@
 sass:
 sass_dir: _sass
+prose:
+  rooturl:
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
