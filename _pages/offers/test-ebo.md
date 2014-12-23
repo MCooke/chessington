@@ -1,15 +1,17 @@
-# Save up to £115 per family in 2015
+# BOOK EARLY FOR 2015 AND SAVE UP TO £115
 ![Book early for 2015](http://chessingtonholidays.merlinbreaks.co.uk/images/masterChessington/offers/banners/early-booking-offer-2015.jpg)
 
 ## What's included in the offer?
-- Book a 2015 break for the family and save up to £115 for a limited time only!
-- Enjoy your 2nd days in the Park – absolutely free!
+- Book a 2015 break to Chessington World of Adventures Resort for the family and save up to £115 for a **limited time only**!
+- Enjoy your **2nd day in the Park – absolutely free**!
 
 ## Where can I stay?
-- This offer is valid for stays at one of the [Resort Hotels](#) or a family-friendly [hotel near Chessington](#)
+- Early bookings for 2015 are valid for stays at one of the [Resort Hotels](#) or a family-friendly [hotel near Chessington](#)
 
 ## When is this offer valid until?
-- You need to book before 31st January, 2015 to save up to £115. 
+- You need to book before 31st January, 2015 to benefit from these early savings. 
+
+# The detail
 
 Adventurers, pack up your things and head to Chessington World of Adventures Resort in 2015 for an expedition like no other.
 
