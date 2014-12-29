@@ -19,7 +19,7 @@
 	</div>
 </nav>
 
-<nav class="navbar-links offcanvas offcanvas-menu">
+<nav class="navbar-links offcanvas offcanvas-left offcanvas-menu">
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="navbar_section navbar_section-menu">
 			<button class="btn btn-blank do_open" data-open=".offcanvas-menu">Back</button>
@@ -41,7 +41,7 @@
 </nav>
 
 
-		<form class="form-inline form-booking offcanvas offcanvas-book" role="form">
+		<form class="form-inline form-booking offcanvas offcanvas-right offcanvas-book" role="form">
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="navbar_section navbar_section-menu">
 		</div>
@@ -66,17 +66,6 @@
 				</span>
 			</div>
 		</div>
-		<div class="offcanvas_level offcanvas-datepicker">
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="navbar_section navbar_section-menu">
-				</div>
-				<div class="navbar_section navbar_section-logo">
-				</div>
-				<div class="navbar_section navbar_section-book">
-					<button class="btn btn-blank do_open" data-open=".offcanvas-datepicker" type="button">Back</button>
-				</div>
-			</nav>
-		</div>
 		<div class="form-group">
 			<div class="input-group">
 				<input type="text" class="form-control form-control-label" placeholder="Nights">
@@ -86,47 +75,58 @@
 		</div>
 
 		<button class="btn btn-default do_open" type="button" data-open=".offcanvas-partycomp">2 Adults &amp; 2 Children</button>
-		<div class="offcanvas_level offcanvas-partycomp">
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="navbar_section navbar_section-menu">
-				</div>
-				<div class="navbar_section navbar_section-logo">
-				</div>
-				<div class="navbar_section navbar_section-book">
-					<button class="btn btn-blank do_open" data-open=".offcanvas-partycomp" type="button">Done</button>
-				</div>
-			</nav>
-			<div class="col-xs-12">
-				<div class="form-group input-group">
-					<input type="text" class="form-control form-control-label" placeholder="Adults">
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-				</div>
-				<div class="form-group input-group">
-					<input type="text" class="form-control form-control-label" placeholder="Young Adults">
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-				</div>
-				<div class="form-group input-group">
-					<input type="text" class="form-control form-control-label" placeholder="Children">
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-				</div>
-				<div class="form-group input-group">
-					<input type="text" class="form-control form-control-label" placeholder="Infants">
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-				</div>
-				<div class="form-group input-group">
-					<input type="text" class="form-control form-control-label" placeholder="Babies">
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-				</div>
-			</div>
-		</div>
 		<button type="submit" class="btn btn-primary pull-right">Search <i class="fa fa-search"></i></button>
 	</div>
 </form>
+<div class="offcanvas_level offcanvas-datepicker">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-datepicker" type="button">Back</button>
+		</div>
+	</nav>
+</div>
+<div class="offcanvas_level offcanvas-partycomp">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-partycomp" type="button">Done</button>
+		</div>
+	</nav>
+	<div class="col-xs-12">
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Adults">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Young Adults">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Children">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Infants">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Babies">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+	</div>
+</div>
     <p><span class="middleContainerMiddle">
 					&lt;p&gt;&lt;/p&gt;&lt;h1&gt;OFFICIAL CHESSINGTON WORLD OF ADVENTURES RESORT SHORT BREAKS&lt;/h1&gt; <!--<br> <h2>2014 Offers Calendar</h2> <p>Check out the exciting offers we have in store this season!</p> <img src="/images/chesshols/chesshols2011/offers-calendar-2014.jpg" alt="Chessington Offers Calendar 2014" />--> <br /> &lt;h2&gt;What’s new for 2015?&lt;/h2&gt; &lt;p&gt;Already thinking about next year’s wild family getaway to Chessington World of Adventures? Find out about the latest events and offers for 2015 before all of your friends.&lt;/p&gt; &lt;p&gt;<strong><a href="http://www.chessingtonholidays.co.uk/whats-new-2015.html">Find out more &gt;&gt;&gt;</a></strong>&lt;/p&gt; <br /> &lt;h2&gt;Our Favourite Attractions&lt;/h2&gt; &lt;p&gt;This year is an exciting one for Chessington World of Adventures Resort. There’s a new ride experience plus the brand new fully-themed Chessington Azteca Hotel all ready to be explored – there’s no better time to visit!&lt;/p&gt; <br /> &lt;h3&gt;AMAZU Treetop Adventure&lt;/h3&gt; <img style="float:center;" src="/images/chesshols/chesshols2011/amazu.jpg" alt="AMAZU Treetop Adventure" /> &lt;p&gt;Have even more fun and play amongst real life monkeys as you follow the adventure trail through the heights of AMAZU!&lt;/p&gt; <small>Open until dusk April — mid September</small> <br /> <br /> &lt;h3&gt;Scorpion Express&lt;/h3&gt; <img src="/images/chesshols/chesshols2011/scorpion-express.jpg" alt="Scorpion Express" /> &lt;p&gt;Board the old train of the Scorpion Express and explore the gold mine ruins of Scorpion Valley. Watch out for surprises at every turn — the unstable mines are guarded by the Scorpion, so anything could happen! Are you brave enough to board?&lt;/p&gt; <br /> &lt;h3&gt;Azteca Hotel — NOW OPEN!&lt;/h3&gt; <img style="float:center;" src="/images/chesshols/chesshols2011/azteca-hotel.jpg" alt="Azteca Hotel" /> &lt;p&gt;The new Hotel brings an additional 69 fully themed bedrooms, a new and exciting restaurant, as well as a splash water play area and much more! &lt;/p&gt; &lt;p&gt;<a href="http://www.chessingtonholidays.co.uk/chessington-azteca-hotel.html">Click here to find out more about the Chessington Azteca Hotel.</a>&lt;/p&gt; <!--<h2>Sign-up for 2014 Chessington Alerts</h2> <p>Sign up to our <a href="http://www.chessingtonholidays.co.uk/2014-email-signup.html">2014 Chessington Holidays Alerts</a> and be first to know what's coming up at Chessington World of Adventures in 2014.</p>--> <br /> <br /> &lt;h2&gt;10 themed lands&lt;/h2&gt; <img style="float:right; margin-right:10px;" src="/images/chesshols/chesshols2011/park.jpg" alt="Chessington Rides" /> &lt;p&gt;Chessington has <strong>10 themed lands</strong> for you to explore. Click on the links to find out more information about each one here and see which rides are most suitable for your children on your Chessington adventure. &lt;/p&gt; <a href="http://www.chessington.com/explore/theme-park/area/34/zufari.aspx" target="_blank" tip="ZUFARI" class=" sweetTitle">ZUFARI</a> <br /> <a href="http://www.chessington.com/explore/theme-park/area/3/forbidden-kingdom.aspx" target="_blank" tip="Forbidden Kingdom" class=" sweetTitle">Forbidden Kingdom</a> <br /> <a href="http://www.chessington.com/explore/theme-park/area/4/land-of-the-dragons.aspx" target="_blank" tip="Land of the Dragons" class=" sweetTitle">Land of the Dragons</a> <br /> <a href="http://www.chessington.com/explore/theme-park/area/5/market-square.aspx" target="_blank" tip="Market Square" class=" sweetTitle">Market Square</a> <br /> <a href="http://www.chessington.com/explore/theme-park/area/6/mexicana.aspx" target="_blank" tip="Mexicana" class=" sweetTitle">Mexicana</a> <br /> <a href="http://www.chessington.com/explore/theme-park/area/7/mystic-east.aspx" target="_blank" tip="Mystic East" class=" sweetTitle">Mystic East</a> <br /> <a href="http://www.chessington.com/explore/theme-park/area/8/pirates-cove.aspx" target="_blank" tip="Pirates Cove" class=" sweetTitle">Pirates Cove</a> <br /> <a href="http://www.chessington.com/explore/theme-park/area/33/africa.aspx" target="_blank" tip="Africa" class=" sweetTitle">Africa </a> <br /> <a href="http://www.chessington.com/explore/theme-park/area/10/transylvania.aspx" target="_blank" tip="Transylvania" class=" sweetTitle">Transylvania</a> <br /> <a href="http://www.chessington.com/explore/theme-park/area/26/wild-asia.aspx" target="_blank" tip="Wild Asia" class=" sweetTitle">Wild Asia</a> <br /><br /> &lt;h2&gt;Chessington Zoo&lt;/h2&gt; <img style="float:right; margin-right:10px;" src="/images/chesshols/chesshols2011/zoo.jpg" alt="Chessington Zoo" /> &lt;p&gt;<strong>Chessington Zoo – There are over 1,000 animals to see at Chessington Zoo. Plus there’s the must see Wanyama Village where you can spot giraffe, zebra, oryx, meercats and more!</strong>&lt;/p&gt; <br /> <strong>SEALION BAY</strong> &lt;p&gt;Splash down to Sealion Bay for the chance to see Harley, Dante, Ariel and Carla play in the water! &lt;/p&gt; <strong>PENGUIN COVE</strong> &lt;p&gt;Waddle down to Penguin Cove where you can see the Humboldt Penguins splashing around. Learn all about these playful penguins in daily presentations!&lt;/p&gt; <strong>WANYAMA VILLAGE &amp; RESERVE</strong> &lt;p&gt; Crawl underground and pop in to visit the meerkats, or get up close to zebras, ostriches and antelopes as they roam freely before your very eyes.&lt;/p&gt; <strong>YooHoo CHILDREN’S ZOO</strong> &lt;p&gt;The Children’s Zoo is the perfect opportunity for animal lovers to interact with a range of furry farmyard friends, including pygmy goats, kunekune pigs, miniature donkeys and sheep!&lt;/p&gt; <strong>CREEPY CAVES</strong> &lt;p&gt;Explore a world of reptiles, snakes and creepy crawlies, including pythons, tarantulas, and other fascinating creatures such as lizards, frogs and millipedes!&lt;/p&gt; <br /><br /> &lt;h2&gt;SEA LIFE CENTRE&lt;/h2&gt; <img style="float:right; margin-right:10px;" src="/images/chesshols/chesshols2011/sea_life.jpg" alt="Chessington Sea Life" /> &lt;p&gt;With live rock pools and feeding sessions, the SEA LIFE centre is an excellent place to learn all about the creatures of the sea.&lt;/p&gt; &lt;p&gt;Get ready to go underwater at Chessington World of Adventures at the spectacular SEA LIFE centre!&lt;/p&gt; &lt;p&gt;The aquarium located within Chessington Zoo houses over 20 marine displays, allowing you to come nose to nose with a wide range of sea creatures ranging from tiny shrimps and colourful clownfish, to majestic sharks and magnificentrays.&lt;/p&gt;<br /> <br /><br /> &lt;h2&gt;Chessington Safari Hotel&lt;/h2&gt; <img style="float:right; margin-right:10px;" src="/images/chesshols/chesshols2011/hotel.jpg" alt="Chessington Safari Hotel" /> &lt;p&gt;Turn your day out into a real Chessington Adventure at the Chessington Safari Hotel.&lt;/p&gt; &lt;p&gt;Book a stay at the onsite Hotel and turn your visit into a Chessington Holiday. There’s so much to enjoy, includingAfrican-themed rooms, swimming pool with kids splash zone, themed restaurant and much more. And what’s best, it’s only a stone’s throw away from the park!&lt;/p&gt; <br /> &lt;h2&gt;Chessington Azteca Hotel&lt;/h2&gt; &lt;p&gt;<strong>Whether you choose to stay in a room of Discovery, go on an expedition to find some Temple Treasure or embark on a quest to the Temple Summit, you are sure to have an unforgettable stay at the Azteca Hotel.</strong>&lt;/p&gt; &lt;p&gt;The brand new Chessington Azteca Hotel is <a href="http://www.chessingtonholidays.co.uk/chessington-azteca-hotel.html">now open</a>.&lt;/p&gt; <br /> &lt;p&gt;Staying in the heart of the action also has exclusive benefits:&lt;/p&gt; <br /> <br /> &lt;p&gt;<strong>Exclusive evening access to Wanyama Village &amp; Reserve and AMAZU Treetop Adventure</strong>&lt;/p&gt; &lt;p&gt;Hotel guests also have exclusive access to Wanyama Village and Reserve from 6.30pm to dusk (April — September) and the new AMAZU Treetop Adventure (mid-August – mid-September).&lt;/p&gt; <br /> &lt;p&gt;<strong>Character Breakfasts</strong>&lt;/p&gt; Start your day with some famous faces from Madagascar.&lt;p&gt;&lt;/p&gt; <br /> &lt;p&gt;<strong>Evening Entertainment</strong>&lt;/p&gt; &lt;p&gt;Kids will love The Rangers Club and Movie Time! Plus they will have the chance to get up close to some fascinating creatures with our Animal Meet &amp; Greets.&lt;/p&gt; <br /> <br /> &lt;h2&gt;Early Rider&lt;/h2&gt; &lt;p&gt;Chessington Safari and Chessington Azteca Hotel guests will have priority access to selected rides before we officially open at 10am (Available for guests staying on a Friday or Saturday and during school holidays).&lt;/p&gt; <br /><br /> &lt;h2&gt;How to get to Chessington&lt;/h2&gt; &lt;p&gt;Chessington World of Adventures Resort is located on the A243 in Surrey and is just two miles from the A3 and M25. There are many different ways to get to Chessington as part of your Chessington Holiday — including easy routes by car, bus, train and plane.&lt;/p&gt; &lt;p&gt;For more information on the different ways to travel to Chessington, see our page on <a href="/travelling-to-chessington.html">travelling to Chessington</a>.&lt;/p&gt; <br /><br /> <!--<br /> <br /> <a name="calendar"></a> <h2>Opening Times 2013</h2> <div class="specialNews"> <center><img src = "/images/chesshols/chesshols2011/Chessington-Opening-2013.jpg" alt="Opening Times 2013" width="700" height="595"/></center> </div> <br> <p><small>Rides subject to availability.</small></p>-->&lt;p&gt;&lt;/p&gt;				</span></p>
 

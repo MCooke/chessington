@@ -6,8 +6,10 @@
 @import "product";
 @import "navbar";
 
+
+
 body{
-	margin-top: 90px;
+	margin-top: 70px;
 }
 
 .form-control-label{
@@ -16,12 +18,12 @@ body{
 	box-shadow: none;
 }
 
-.form-booking{
-	left: 100%;
-	&.active{
-		left: 0%;
-	}
-}
+// .form-booking{
+// 	left: 100%;
+// 	&.active{
+// 		left: 0%;
+// 	}
+// }
 
 .btn-blank{
 	margin-top: 8px;

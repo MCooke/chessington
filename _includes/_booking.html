@@ -1,4 +1,4 @@
-<form class="form-inline form-booking offcanvas offcanvas-book" role="form">
+<form class="form-inline form-booking offcanvas offcanvas-right offcanvas-book" role="form">
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="navbar_section navbar_section-menu">
 		</div>
@@ -23,17 +23,6 @@
 				</span>
 			</div>
 		</div>
-		<div class="offcanvas_level offcanvas-datepicker">
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="navbar_section navbar_section-menu">
-				</div>
-				<div class="navbar_section navbar_section-logo">
-				</div>
-				<div class="navbar_section navbar_section-book">
-					<button class="btn btn-blank do_open" data-open=".offcanvas-datepicker" type="button">Back</button>
-				</div>
-			</nav>
-		</div>
 		<div class="form-group">
 			<div class="input-group">
 				<input type="text" class="form-control form-control-label" placeholder="Nights">
@@ -43,44 +32,55 @@
 		</div>
 
 		<button class="btn btn-default do_open" type="button" data-open=".offcanvas-partycomp">2 Adults &amp; 2 Children</button>
-		<div class="offcanvas_level offcanvas-partycomp">
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="navbar_section navbar_section-menu">
-				</div>
-				<div class="navbar_section navbar_section-logo">
-				</div>
-				<div class="navbar_section navbar_section-book">
-					<button class="btn btn-blank do_open" data-open=".offcanvas-partycomp" type="button">Done</button>
-				</div>
-			</nav>
-			<div class="col-xs-12">
-				<div class="form-group input-group">
-					<input type="text" class="form-control form-control-label" placeholder="Adults">
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-				</div>
-				<div class="form-group input-group">
-					<input type="text" class="form-control form-control-label" placeholder="Young Adults">
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-				</div>
-				<div class="form-group input-group">
-					<input type="text" class="form-control form-control-label" placeholder="Children">
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-				</div>
-				<div class="form-group input-group">
-					<input type="text" class="form-control form-control-label" placeholder="Infants">
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-				</div>
-				<div class="form-group input-group">
-					<input type="text" class="form-control form-control-label" placeholder="Babies">
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-				</div>
-			</div>
-		</div>
 		<button type="submit" class="btn btn-primary pull-right">Search <i class="fa fa-search"></i></button>
 	</div>
 </form>
+<div class="offcanvas_level offcanvas-datepicker">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-datepicker" type="button">Back</button>
+		</div>
+	</nav>
+</div>
+<div class="offcanvas_level offcanvas-partycomp">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-partycomp" type="button">Done</button>
+		</div>
+	</nav>
+	<div class="col-xs-12">
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Adults">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Young Adults">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Children">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Infants">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Babies">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+	</div>
+</div>

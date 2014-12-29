@@ -5475,7 +5475,8 @@ button.close {
     display: none !important; } }
 .product {
   border: 1px solid black;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  background: #f36c60; }
 
 .product-small {
   height: 20vh; }
@@ -5505,51 +5506,59 @@ button.close {
 .navbar_section-logo {
   height: 50px;
   width: 50%; }
+  .navbar_section-logo img {
+    -webkit-transition: 0.8s;
+    transition: height 0.8s;
+    height: 110px; }
+  .navbar_section-logo.small img {
+    height: 60px; }
 
 .offcanvas {
-  z-index: 4;
-  display: none;
   position: fixed;
-  top: 0;
+  z-index: 1001;
   width: 100%;
   height: 100%;
+  top: 0;
+  font-size: 1.15em;
+  -webkit-transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
-  background: #fafafa; }
-  .offcanvas.active {
-    display: block; }
+  background: #fbfbfb; }
+  .offcanvas-left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+    .offcanvas-left.active {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
+  .offcanvas-right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+    .offcanvas-right.active {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
 
 .offcanvas_level {
-  z-index: 5;
   position: fixed;
-  top: 0;
-  height: 100%;
+  z-index: 1002;
   width: 90%;
-  left: 100%;
-  display: none;
-  background: #fbfbfb;
-  border-left: 1px solid black;
-  box-shadow: -10px 0px 25px 0px rgba(0, 0, 0, 0.5); }
+  height: 100%;
+  top: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #fafafa;
+  -webkit-transform: translate3d(110%, 0, 0);
+  transform: translate3d(110%, 0, 0); }
   .offcanvas_level.active {
-    left: 10%;
-    display: block; }
-
-.navbar-links {
-  left: -100%; }
-  .navbar-links.active {
-    left: 0%; }
+    -webkit-transform: translate3d(10%, 0, 0);
+    transform: translate3d(10%, 0, 0);
+    box-shadow: -10px 0px 25px 0px rgba(0, 0, 0, 0.5); }
 
 body {
-  margin-top: 90px; }
+  margin-top: 70px; }
 
 .form-control-label {
   background: transparent;
   border: none;
   box-shadow: none; }
-
-.form-booking {
-  left: 100%; }
-  .form-booking.active {
-    left: 0%; }
 
 .btn-blank {
   margin-top: 8px;
