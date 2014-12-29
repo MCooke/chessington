@@ -20,8 +20,8 @@ Young Adventurers have access to a whole range of exciting entertainment during 
 
 **You will also have access to** the awesome Savannah Splash Kids indoor pool. Dive right in and make waves with the amazing water jets and cannons!
 
-Chessington Safari Hotel**, and starts from just **£99 per family!**
+Chessington Safari Hotel, and starts from just **£99 per family!**
 
-<strong>BOOK NOW</strong>
+<strong>BOOK NOW</strong
 
 <small>Terms and conditions apply. Offer subject to change and availability. £99 lead price based on 2 adults and 2 children sharing a standard family room at the Chessington Safari Hotel on selected dates.</small>
