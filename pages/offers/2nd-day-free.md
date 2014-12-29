@@ -1,10 +1,13 @@
+---
+layout: default
+---
 # 2nd Day Free
 
 ![2nd Day Free Banner](http://chessingtonholidays.merlinbreaks.co.uk/images/masterChessington/offers/banners/chessington-2nd-day-free.png)
 
-** Every Chessington Holiday includes a 2nd Day FREE in the park — at no extra cost!**
+**Every Chessington Holiday includes a 2nd Day FREE in the park - at no extra cost!**
 
-<p>Packages start from <strong>just &pound;115</strong> for a family of four and all include:
+Packages start from **just &pound;115** for a family of four and all include:
 
 - Chessington tickets
 - An overnight stay
