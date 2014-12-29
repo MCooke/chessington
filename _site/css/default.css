@@ -1063,7 +1063,7 @@ mark,
 .text-right {
   text-align: right; }
 
-.text-center {
+.text-center, .product {
   text-align: center; }
 
 .text-justify {
@@ -5474,20 +5474,43 @@ button.close {
   .hidden-print {
     display: none !important; } }
 .product {
-  border: 1px solid black;
   margin-bottom: 20px;
-  background: #f36c60; }
+  background: #558b2f;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
+  color: #fafafa; }
+
+.product-blue {
+  background: #128bc9; }
+
+.product-purple {
+  background: #7b2a60; }
+
+.product-red {
+  background: #bf1d1e; }
+
+.product-green {
+  background: #32a040; }
 
 .product-small {
   height: 20vh; }
 
 .product-large {
-  height: 50vh; }
+  height: 50vh;
+  padding-top: 10vh;
+  background-color: #128bc9;
+  background-image: url("/images/plant-bottom-left.png"), url("/images/plant-bottom-right.png");
+  background-size: 50%, 45%;
+  background-position: 0% 100%, 100% 100%;
+  background-repeat: no-repeat; }
 
 .product_cta {
   bottom: 5px;
   right: 5px;
   position: absolute; }
+
+.product_body {
+  position: absolute;
+  bottom: 5px; }
 
 .navbar-header {
   z-index: 1; }
@@ -5521,7 +5544,7 @@ button.close {
   top: 0;
   font-size: 1.15em;
   -webkit-transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
+  transition: 0.4s;
   background: #fbfbfb; }
   .offcanvas-left {
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -5534,7 +5557,8 @@ button.close {
     transform: translate3d(100%, 0, 0); }
     .offcanvas-right.active {
       -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
+      transform: translate3d(0, 0, 0);
+      box-shadow: -10px 0px 25px 0px rgba(0, 0, 0, 0.5); }
 
 .offcanvas_level {
   position: fixed;
@@ -5552,8 +5576,20 @@ button.close {
     transform: translate3d(10%, 0, 0);
     box-shadow: -10px 0px 25px 0px rgba(0, 0, 0, 0.5); }
 
+@font-face {
+  font-family: 'Grilled Cheese';
+  src: url("grilled-cheese.woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
 body {
-  margin-top: 70px; }
+  margin-top: 70px;
+  font-family: 'Open Sans';
+  -webkit-font-smoothing: antialiased; }
 
 .form-control-label {
   background: transparent;
@@ -5563,3 +5599,11 @@ body {
 .btn-blank {
   margin-top: 8px;
   background: none; }
+
+.text-brand {
+  text-shadow: 2px 2px red, -2px -2px 0px red, 2px -2px red, -2px 2px red, 0px 2px red, -2px 0px red, 2px 0px red;
+  color: #ffeb3b; }
+
+h1, h2, h3, h4 {
+  font-family: 'Grilled Cheese';
+  -webkit-font-smoothing: antialiased; }

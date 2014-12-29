@@ -6,10 +6,24 @@
 @import "product";
 @import "navbar";
 
+@font-face {
+  font-family: 'Grilled Cheese';
+    src: url("grilled-cheese.woff");
+  font-weight: bold;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
 
 body{
 	margin-top: 70px;
+	font-family: 'Open Sans';
+	-webkit-font-smoothing: antialiased;
 }
 
 .form-control-label{
@@ -18,13 +32,6 @@ body{
 	box-shadow: none;
 }
 
-// .form-booking{
-// 	left: 100%;
-// 	&.active{
-// 		left: 0%;
-// 	}
-// }
-
 .btn-blank{
 	margin-top: 8px;
 	background: none;
@@ -32,4 +39,14 @@ body{
 
 .input-group-btns{
 	@extend .input-group-btn;
+}
+
+.text-brand{
+	text-shadow: 2px 2px red, -2px -2px 0px red, 2px -2px red, -2px 2px red, 0px 2px red, -2px 0px red, 2px 0px red;
+	color: $yellow500;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Grilled Cheese';
+	-webkit-font-smoothing: antialiased;
 }

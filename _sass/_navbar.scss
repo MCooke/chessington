@@ -38,8 +38,7 @@
 	top: 0;
 	font-size: 1.15em;
 	-webkit-transition: -webkit-transform 0.4s;
-	transition: transform 0.4s;
-
+	transition: 0.4s;
 	background: #fbfbfb;
 
 	&-left{
@@ -56,6 +55,7 @@
 		&.active{
 			-webkit-transform: translate3d(0,0,0);
 			transform: translate3d(0,0,0);
+			box-shadow: -10px 0px 25px 0px rgba(0,0,0,0.5);
 		}
 	}
 }
