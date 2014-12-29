@@ -1,3 +1,10 @@
+---
+permalink: "/offers/early-booking-offer.html"
+layout: default
+published: true
+type: page
+title: Early Booking Offer
+---
 ## Early Booking Offer
 
 ![Book early for 2015](http://chessingtonholidays.merlinbreaks.co.uk/images/masterChessington/offers/banners/early-booking-offer-2015.jpg)
