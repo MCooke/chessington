@@ -4,6 +4,7 @@ sass:
 sass_dir: _sass
 prose:
   rooturl:
+  siteurl: "http://mcooke.github.io/chessington"
   metadata:
     _pages:
       - name: "permalink"
