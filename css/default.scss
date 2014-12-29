@@ -3,3 +3,31 @@
 ---
 
 @import "includes";
+@import "product";
+@import "navbar";
+
+body{
+	margin-top: 90px;
+}
+
+.form-control-label{
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+.form-booking{
+	left: 100%;
+	&.active{
+		left: 0%;
+	}
+}
+
+.btn-blank{
+	margin-top: 8px;
+	background: none;
+}
+
+.input-group-btns{
+	@extend .input-group-btn;
+}

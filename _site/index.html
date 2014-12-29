@@ -1,74 +1,154 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="css/default.css">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <body>
-    <nav class="navbar navbar-default container" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <img src="http://www.chessington.com/images/common/logos/cwoa-header-logo.png" alt="">
-    </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active">
-        	<a href="#">Home</a>
-        </li>
-        <li>
-        	<a href="#">Explore</a>
-        </li>
-        <li>
-        	<a href="#">Explore</a>
-        </li>
-        <li>
-        	<a href="#">Explore</a>
-        </li>
-        <li>
-        	<a href="#">Explore</a>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+<link rel="stylesheet" href="css/default.css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/logic.js"></script>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-header" role="navigation">
+	<div class="navbar_section navbar_section-menu">
+		<button class="btn btn-blank do_open" data-open=".offcanvas-menu">Menu</button>
+	</div>
+	<div class="navbar_section navbar_section-logo">
+		<img src="http://www.chessington.com/images/common/logos/cwoa-header-logo.png" alt="">
+	</div>
+	<div class="navbar_section navbar_section-book">
+		<button class="btn btn-blank do_open" data-open=".offcanvas-book">Book</button>
+	</div>
+</nav>
+
+<nav class="navbar-links offcanvas offcanvas-menu">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-menu">Back</button>
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+		</div>
+	</nav>
+	<ul>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+	</ul>
 </nav>
 
 
-		<form class="form-inline container" role="form">
-  <div class="row">
-    <div class="form-group">
-      <select class="form-control" id="ticketType" placeholder="Ticket Type">
-        <option value="">Kids Go Free</option>
-        <option value="">Father Christmas Sleepover</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <div class="input-group">
-        <div class="input-group-addon">
-          <i class="fa fa-calendar"></i>
-        </div>
-        <input type="date" class="form-control" id="exampleInputEmail2" placeholder="Date?">
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="input-group">
-        <span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-        <input type="text" class="form-control" placeholder="Nights">
-        <span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-default">2 Adults &amp; 2 Children</button>
-    <button type="submit" class="btn btn-primary pull-right">Search <i class="fa fa-search"></i></button>
-  </div>
+		<form class="form-inline form-booking offcanvas offcanvas-book" role="form">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-book" type="button">Back</button>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="form-group">
+			<select class="form-control" id="ticketType" placeholder="Ticket Type">
+				<option value="">Kids Go Free</option>
+				<option value="">Father Christmas Sleepover</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control" id="exampleInputEmail2" placeholder="->" disabled>
+				<span class="input-group-btn">
+					<button class="btn btn-default do_open" type="button" data-open=".offcanvas-datepicker">Pick Date <i class="fa fa-calendar"></i></button>
+				</span>
+			</div>
+		</div>
+		<div class="offcanvas_level offcanvas-datepicker">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar_section navbar_section-menu">
+				</div>
+				<div class="navbar_section navbar_section-logo">
+				</div>
+				<div class="navbar_section navbar_section-book">
+					<button class="btn btn-blank do_open" data-open=".offcanvas-datepicker" type="button">Back</button>
+				</div>
+			</nav>
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control form-control-label" placeholder="Nights">
+				<span class="input-group-btns"><button class="btn btn-default" type="button">&minus;</button></span>
+				<span class="input-group-btns"><button class="btn btn-default" type="button">&plus;</button></span>
+			</div>
+		</div>
+
+		<button class="btn btn-default do_open" type="button" data-open=".offcanvas-partycomp">2 Adults &amp; 2 Children</button>
+		<div class="offcanvas_level offcanvas-partycomp">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar_section navbar_section-menu">
+				</div>
+				<div class="navbar_section navbar_section-logo">
+				</div>
+				<div class="navbar_section navbar_section-book">
+					<button class="btn btn-blank do_open" data-open=".offcanvas-partycomp" type="button">Done</button>
+				</div>
+			</nav>
+			<div class="col-xs-12">
+				<div class="form-group input-group">
+					<input type="text" class="form-control form-control-label" placeholder="Adults">
+					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+				</div>
+				<div class="form-group input-group">
+					<input type="text" class="form-control form-control-label" placeholder="Young Adults">
+					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+				</div>
+				<div class="form-group input-group">
+					<input type="text" class="form-control form-control-label" placeholder="Children">
+					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+				</div>
+				<div class="form-group input-group">
+					<input type="text" class="form-control form-control-label" placeholder="Infants">
+					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+				</div>
+				<div class="form-group input-group">
+					<input type="text" class="form-control form-control-label" placeholder="Babies">
+					<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+					<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+				</div>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary pull-right">Search <i class="fa fa-search"></i></button>
+	</div>
 </form>
     <div class="container">
-	<h1>CONTENT</h1>
+	<section class="product product-large col-xs-12">
+		<h3 class="product_title">Save upto 85% off per family in 2015</h3>
+		<!-- <button class="btn btn-default pull-right btn-sm product_cta">Find out more</button> -->
+	</section>
+	<div class="product btn-group btn-group-justified" role="group" aria-label="...">
+		<a href="" class="btn btn-default">Park Info</a>
+		<a href="" class="btn btn-default">Directions</a>
+	</div>
+	<section class="product product-small col-xs-12">
+		<h3 class="product_title">Chessington Azteca Hotel</h3>
+	</section>
+	<section class="product product-small col-xs-12">
+		<h3 class="product_title">Chessington Safari Hotel</h3>
+	</section>
+	<section class="product product-small col-xs-12">
+		<h3 class="product_title">Kids go free</h3>
+	</section>
+	<section class="product product-small col-xs-12">
+		<h3 class="product_title">Just want tickets?</h3>
+	</section>
+	<button class="btn btn-blank do_open" data-open=".offcanvas-book">Book</button>
 </div>
 
     
