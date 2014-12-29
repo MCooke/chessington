@@ -3,8 +3,9 @@ permalink: "/offers/2nd-day-free.html"
 layout: default
 published: true
 type: page
-title: "2nd Day Free"
+title: 2nd Day Free
 ---
+
 # 2nd Day Free
 
 ![2nd Day Free Banner](http://chessingtonholidays.merlinbreaks.co.uk/images/masterChessington/offers/banners/chessington-2nd-day-free.png)
