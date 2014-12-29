@@ -2,23 +2,3 @@ baseurl: /chessington
 include: ['_pages']
 sass:
 sass_dir: _sass
-prose:
-  rooturl:
-  siteurl: "http://mcooke.github.io/chessington"
-  metadata:
-    _pages:
-      - name: "permalink"
-        field:
-          element: "text"
-      - name: "published"
-        field:
-          element: "button"
-          on: "true"
-          off: "false"
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "default"
-      - name: "title"
-        field:
-          element: "text"
