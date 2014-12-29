@@ -15,12 +15,18 @@ Every Chessington Holiday includes:
 </strong>
 
 **Choose from the Chessington Resort Hotels**<br>
-The <a href="http://www.chessingtonholidays.co.uk/hotels/safari-resort-hotel.html">Chessington Safari Hotel</a> - an exciting stay at the Safari Hotel is like stepping onto the African plains. 
-The <a href="http://www.chessingtonholidays.co.uk/hotels/chessington-azteca-hotel.html">Chessington Azteca Hotel</a> with its fully-themed bedrooms and amazing Savannah Splash kids water play area.
+- The <a href="http://www.chessingtonholidays.co.uk/hotels/safari-resort-hotel.html">Chessington Safari Hotel</a> — Step into Africa. 
+- The <a href="http://www.chessingtonholidays.co.uk/hotels/chessington-azteca-hotel.html">Chessington Azteca Hotel</a> — Explore the brand new hotel.
 
-Make even more savings when you stay just a short distance from the park in any one of our top nearby hotels like <a href="http://www.chessingtonholidays.co.uk/hotels/hilton-cobham.html">Hilton Cobham</a> and <a href="http://www.chessingtonholidays.co.uk/hotels/holiday-inn-express-epsom-downs.html">Holiday Inn Express Epsom Downs</a>. All of our family-friendly hotels make for perfect pit stops during your Chessington Holiday and provide a hefty breakfast* to feed your own hungry herd during your stay. 
 
-Besides the brand new Azteca Hotel, 2014 welcomed the amazing Amazu Treetop Adventure for your own troupe of cheeky monkeys to climb, cling and swing amongst. Not to mention, the bravest explorers took to the Scorpion Express for new thrills this year. We'll unveil our latest events and attractions for 2015 soon, but in the meantime you can <a href="http://www.chessingtonholidays.co.uk/whats-new-2015.html">stay up to date by joining our newsletter</a> for the latest news and Chessington offers.
+**Or stay nearby**
+Make even more savings when you stay just a short distance from the park in any one of our top nearby hotels like
+<ul>
+<li><a href="http://www.chessingtonholidays.co.uk/hotels/hilton-cobham.html">Hilton Cobham</a></li>
+<li><a href="http://www.chessingtonholidays.co.uk/hotels/holiday-inn-express-epsom-downs.html">Holiday Inn Express Epsom Downs</a>.</li> 
+</ul>
+**New for 2015**
+We'll unveil our latest events and attractions for 2015 soon, but in the meantime you can <a href="http://www.chessingtonholidays.co.uk/whats-new-2015.html">stay up to date by joining our newsletter</a> for the latest news and Chessington offers.
 
 **Book now — save up to £115 on your 2015 Chessington Holiday**
 
