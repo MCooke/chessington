@@ -5,12 +5,19 @@ sass_dir: _sass
 prose:
   rooturl:
   metadata:
-    _posts:
-      - name: "category"
+    _pages:
+      - name: "permalink"
         field:
-          element: "hidden"
-          value: "blog"
+          element: "text"
+      - name: "published"
+        field:
+          element: "button"
+          on: "true"
+          off: "false"
       - name: "layout"
         field:
           element: "hidden"
           value: "default"
+      - name: "title"
+        field:
+          element: "text"
