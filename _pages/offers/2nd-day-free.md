@@ -1,5 +1,9 @@
 ---
+permalink: "/offers/2nd-day-free.html"
 layout: default
+published: true
+type: page
+title: "2nd Day Free"
 ---
 # 2nd Day Free
 

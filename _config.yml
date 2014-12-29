@@ -1,3 +1,5 @@
+baseurl: /chessington
+include: ['_pages']
 sass:
 sass_dir: _sass
 prose:
