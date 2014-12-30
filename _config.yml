@@ -2,3 +2,12 @@ baseurl: /chessington
 include: ['_pages']
 sass:
 sass_dir: _sass
+metadata:
+    _pages:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "permalink"
+        field:
+          element: "text"
