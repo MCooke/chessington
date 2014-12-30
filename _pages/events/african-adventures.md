@@ -1,6 +1,6 @@
 ---
 layout: default
-published: false
+published: true
 title: African Adventures
 permalink: "events/african-adventures.html"
 type: page
