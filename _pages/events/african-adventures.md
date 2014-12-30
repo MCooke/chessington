@@ -18,14 +18,14 @@ type: page
 Treat your cheeky monkeys to an action-packed Chessington Holiday this February half term and open their eyes to a world of African discovery and adventure.
 
 Young Adventurers have access to a whole range of exciting entertainment during their stay, including:
-<strong>
+
 <ul>
 <li>Access to African Adventures event across the Zoo and SEA LIFE centre</li>	
 <li>The Rangers Club family evening entertainment</li>
 <li>Movie Time!</li>
 <li>Animal meet &amp; greets</li>
 <li>Plus much more!</li>
-</ul></strong>
+</ul>
 
 **You will also have access to** the awesome Savannah Splash Kids indoor pool. Dive right in and make waves with the amazing water jets and cannons!
 
