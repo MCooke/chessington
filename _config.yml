@@ -6,7 +6,7 @@ prose:
   rooturl: '_pages'
   siteurl: 'http://mcooke.github.io/chessington/'
   metadata:
-    _pages/offers:
+    _pages:
       - name: "layout"
         field:
           element: "hidden"
