@@ -5569,8 +5569,8 @@ button.close {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   background: #fafafa;
-  -webkit-transform: translate3d(110%, 0, 0);
-  transform: translate3d(110%, 0, 0); }
+  -webkit-transform: translate3d(120%, 0, 0);
+  transform: translate3d(120%, 0, 0); }
   .offcanvas_level.active {
     -webkit-transform: translate3d(10%, 0, 0);
     transform: translate3d(10%, 0, 0);

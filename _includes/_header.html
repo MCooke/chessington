@@ -3,7 +3,7 @@
 		<button class="btn btn-blank do_open" data-open=".offcanvas-menu">Menu</button>
 	</div>
 	<div class="navbar_section navbar_section-logo">
-		<img src="http://www.chessington.com/images/common/logos/cwoa-header-logo.png" alt="">
+		<a href="{{ site.baseurl }}/"><img src="http://www.chessington.com/images/common/logos/cwoa-header-logo.png" alt=""></a>
 	</div>
 	<div class="navbar_section navbar_section-book">
 		<button class="btn btn-blank do_open" data-open=".offcanvas-book">Book</button>
@@ -21,13 +21,9 @@
 		</div>
 	</nav>
 	<ul>
-		<li><a href="">Link</a></li>
-		<li><a href="">Link</a></li>
-		<li><a href="">Link</a></li>
-		<li><a href="">Link</a></li>
-		<li><a href="">Link</a></li>
-		<li><a href="">Link</a></li>
-		<li><a href="">Link</a></li>
+		{% for page in site.pages %}
+			<li><a href="{{ site.baseurl}}/{{ page.permalink }}">{{ page.title }}</a></li>
+		{% endfor %}
 	</ul>
 </nav>
 
