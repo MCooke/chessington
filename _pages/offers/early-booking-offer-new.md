@@ -29,6 +29,7 @@ Every Chessington Holiday includes:
 </ul>
 
 **Or stay nearby**
+<br>
 Make even more savings when you stay just a short distance from the park in any one of our top nearby hotels like
 <ul>
 <li><a href="http://www.chessingtonholidays.co.uk/hotels/hilton-cobham.html">Hilton Cobham</a></li>
