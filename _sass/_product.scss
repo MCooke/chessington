@@ -32,12 +32,15 @@
 
 .product-large{
 	height: 50vh;
-	padding-top: 10vh;
+	padding-top: 15vh;
 	background-color: #128bc9; 
-	background-image: url('images/plant-bottom-left.png'), url('images/plant-bottom-right.png');
-	background-size: 50%, 45%;
-	background-position: 0% 100%, 100% 100%;
-	background-repeat: no-repeat;
+	// background-image: url('images/plant-bottom-left.png'), url('images/plant-bottom-right.png');
+	// background-size: 50%, 45%;
+	// background-position: 0% 100%, 100% 100%;
+	// background-repeat: no-repeat;
+	.product_title{
+		margin: 0;
+	}
 }
 
 .product_cta{
