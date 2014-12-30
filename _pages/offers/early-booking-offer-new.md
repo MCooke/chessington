@@ -1,10 +1,11 @@
 ---
-permalink: "/offers/early-booking-offer.html"
 layout: default
+permalink: "offers/early-booking-offer.html"
 published: true
 type: page
 title: Early Booking Offer
 ---
+
 ## Early Booking Offer
 
 ![Book early for 2015](http://chessingtonholidays.merlinbreaks.co.uk/images/masterChessington/offers/banners/early-booking-offer-2015.jpg)
@@ -15,16 +16,17 @@ title: Early Booking Offer
 You could treat your family to a fantastic trip to Chessington for less when you book your Chessington Holiday today. By booking early you are guaranteed the very best availability and offers.
 
 Every Chessington Holiday includes:
-<strong>
-- An overnight stay in a Resort or nearby hotel
-- Chessington tickets
-- A delicious breakfast*
-</strong>
+<ul>
+<li>An overnight stay in a Resort or nearby hotel</li>
+<li>Chessington tickets</li>
+<li>A delicious breakfast</li>
+</ul>
 
 **Choose from the Chessington Resort Hotels**<br>
-- The <a href="http://www.chessingtonholidays.co.uk/hotels/safari-resort-hotel.html">Chessington Safari Hotel</a> — Step into Africa. 
-- The <a href="http://www.chessingtonholidays.co.uk/hotels/chessington-azteca-hotel.html">Chessington Azteca Hotel</a> — Explore the brand new hotel.
-
+<ul>
+<li>The <a href="http://www.chessingtonholidays.co.uk/hotels/safari-resort-hotel.html">Chessington Safari Hotel</a> — Step into Africa</li> 
+<li>The <a href="http://www.chessingtonholidays.co.uk/hotels/chessington-azteca-hotel.html">Chessington Azteca Hotel</a> — Explore the brand new hotel</li>
+</ul>
 
 **Or stay nearby**
 Make even more savings when you stay just a short distance from the park in any one of our top nearby hotels like
@@ -32,6 +34,7 @@ Make even more savings when you stay just a short distance from the park in any 
 <li><a href="http://www.chessingtonholidays.co.uk/hotels/hilton-cobham.html">Hilton Cobham</a></li>
 <li><a href="http://www.chessingtonholidays.co.uk/hotels/holiday-inn-express-epsom-downs.html">Holiday Inn Express Epsom Downs</a>.</li> 
 </ul>
+
 **New for 2015**
 We'll unveil our latest events and attractions for 2015 soon, but in the meantime you can <a href="http://www.chessingtonholidays.co.uk/whats-new-2015.html">stay up to date by joining our newsletter</a> for the latest news and Chessington offers.
 
