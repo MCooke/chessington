@@ -5475,24 +5475,26 @@ button.close {
     display: none !important; } }
 .product {
   margin-bottom: 20px;
-  background: #558b2f;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
   color: #fafafa; }
 
-.product-blue {
+.bg-blue {
   background: #128bc9; }
 
-.product-purple {
+.bg-purple {
   background: #7b2a60; }
 
-.product-red {
+.bg-red {
   background: #bf1d1e; }
 
-.product-green {
+.bg-green {
   background: #32a040; }
 
 .product-small {
-  height: 20vh; }
+  height: 15vh; }
+
+.product-medium {
+  height: 30vh; }
 
 .product-large {
   height: 50vh;
@@ -5508,9 +5510,17 @@ button.close {
   right: 5px;
   position: absolute; }
 
+.product-hotel .product_title {
+  margin-top: 3vh; }
+
 .product_body {
   position: absolute;
-  bottom: 5px; }
+  bottom: 0;
+  left: 0;
+  height: 20vh;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 .navbar-header {
   z-index: 1; }
@@ -5547,6 +5557,8 @@ button.close {
   transition: 0.4s;
   background: #fbfbfb; }
   .offcanvas-left {
+    width: auto;
+    height: auto;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); }
     .offcanvas-left.active {

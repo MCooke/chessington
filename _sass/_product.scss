@@ -1,30 +1,33 @@
 .product{
 	margin-bottom: 20px;
-	background: $lightGreen800;
 
 	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
 	color: $grey50;
 	@extend .text-center;
 }
 
-.product-blue{
+.bg-blue{
 	background: #128bc9;
 }
 
-.product-purple{
+.bg-purple{
 	background: #7b2a60;
 }
 
-.product-red{
+.bg-red{
 	background: #bf1d1e;
 }
 
-.product-green{
+.bg-green{
 	background: #32a040;
 }
 
 .product-small{
-	height: 20vh;
+	height: 15vh;
+}
+
+.product-medium{
+	height: 30vh;
 }
 
 .product-large{
@@ -43,7 +46,18 @@
 	position: absolute;
 }
 
+.product-hotel{
+	.product_title{
+		margin-top: 3vh;
+	}
+}
+
 .product_body{
 	position: absolute;
-	bottom: 5px;
+	bottom: 0;
+	left: 0;
+	height: 20vh;
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
