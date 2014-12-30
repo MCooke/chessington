@@ -1,6 +1,6 @@
 ---
 layout: default
-published: false
+published: true
 title: Wild Winter Adventures
 ---
 
@@ -11,7 +11,9 @@ title: Wild Winter Adventures
 ## Unleash a wild family adventure this winter
 **Selected dates in January, February and March**
 
-Wrap up this Winter and discover a number of amazing animal experiences as you journey through Chessington Zoo and SEA LIFE centre with a Wild Winter Adventure. Then warm up at the Chessington Safari Hotel or Chessington Azteca Hotel where you can continue your Wild Adventure. Your package will include: 
+Wrap up this Winter and **discover a number of amazing animal experiences** as you journey through Chessington Zoo and SEA LIFE centre with a **Wild Winter Adventure**. Then warm up at the Chessington Safari Hotel or Chessington Azteca Hotel where you can continue your Wild Adventure.
+<br><br>
+Your package will include: 
 <ul><strong>
 <li>A visit to the Zoo and SEA LIFE centre</li>
 <li>Monkey around in the Savannah Splash pool and gym</li>
