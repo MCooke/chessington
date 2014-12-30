@@ -2,12 +2,18 @@ baseurl: /chessington
 include: ['_pages']
 sass:
 sass_dir: _sass
-metadata:
+prose:
+  rooturl: '_pages'
+  siteurl: 'http://mcooke.github.io/chessington/'
+  metadata:
     _pages/offers:
       - name: "layout"
         field:
           element: "hidden"
           value: "default"
+      - name: "title"
+        field:
+          element: "text"
       - name: "permalink"
         field:
           element: "text"
