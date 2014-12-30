@@ -2,7 +2,7 @@
 layout: default
 published: true
 title: Wild Winter Adventures
-permalink: "/events/wild-winter-adventures.html"
+permalink: "events/wild-winter-adventures.html"
 ---
 
 ## Wild Winter Adventures 
