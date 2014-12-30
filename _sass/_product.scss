@@ -1,0 +1,63 @@
+.product{
+	margin-bottom: 20px;
+
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
+	color: $grey50;
+	@extend .text-center;
+}
+
+.bg-blue{
+	background: #128bc9;
+}
+
+.bg-purple{
+	background: #7b2a60;
+}
+
+.bg-red{
+	background: #bf1d1e;
+}
+
+.bg-green{
+	background: #32a040;
+}
+
+.product-small{
+	height: 15vh;
+}
+
+.product-medium{
+	height: 30vh;
+}
+
+.product-large{
+	height: 50vh;
+	padding-top: 10vh;
+	background-color: #128bc9; 
+	background-image: url('images/plant-bottom-left.png'), url('images/plant-bottom-right.png');
+	background-size: 50%, 45%;
+	background-position: 0% 100%, 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.product_cta{
+	bottom: 5px;
+	right: 5px;
+	position: absolute;
+}
+
+.product-hotel{
+	.product_title{
+		margin-top: 3vh;
+	}
+}
+
+.product_body{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 20vh;
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}

@@ -1,27 +1,86 @@
-<form class="form-inline container" role="form">
-  <div class="row">
-    <div class="form-group">
-      <select class="form-control" id="ticketType" placeholder="Ticket Type">
-        <option value="">Kids Go Free</option>
-        <option value="">Father Christmas Sleepover</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <div class="input-group">
-        <div class="input-group-addon">
-          <i class="fa fa-calendar"></i>
-        </div>
-        <input type="date" class="form-control" id="exampleInputEmail2" placeholder="Date?">
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="input-group">
-        <span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
-        <input type="text" class="form-control" placeholder="Nights">
-        <span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-default">2 Adults &amp; 2 Children</button>
-    <button type="submit" class="btn btn-primary pull-right">Search <i class="fa fa-search"></i></button>
-  </div>
+<form class="form-inline form-booking offcanvas offcanvas-right offcanvas-book" role="form">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-book" type="button">Back</button>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="form-group">
+			<select class="form-control" id="ticketType" placeholder="Ticket Type">
+				<option value="">Kids Go Free</option>
+				<option value="">Father Christmas Sleepover</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control" id="exampleInputEmail2" placeholder="->" disabled>
+				<span class="input-group-btn">
+					<button class="btn btn-default do_open" type="button" data-open=".offcanvas-datepicker">Pick Date <i class="fa fa-calendar"></i></button>
+				</span>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control form-control-label" placeholder="Nights">
+				<span class="input-group-btns"><button class="btn btn-default" type="button">&minus;</button></span>
+				<span class="input-group-btns"><button class="btn btn-default" type="button">&plus;</button></span>
+			</div>
+		</div>
+
+		<button class="btn btn-default do_open" type="button" data-open=".offcanvas-partycomp">2 Adults &amp; 2 Children</button>
+		<button type="submit" class="btn btn-primary pull-right">Search <i class="fa fa-search"></i></button>
+	</div>
 </form>
+<div class="offcanvas_level offcanvas-datepicker">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-datepicker" type="button">Back</button>
+		</div>
+	</nav>
+</div>
+<div class="offcanvas_level offcanvas-partycomp">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-partycomp" type="button">Done</button>
+		</div>
+	</nav>
+	<div class="col-xs-12">
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Adults">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Young Adults">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Children">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Infants">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+		<div class="form-group input-group">
+			<input type="text" class="form-control form-control-label" placeholder="Babies">
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&minus;</button></span>
+			<span class="input-group-btn"><button class="btn btn-default" type="button">&plus;</button></span>
+		</div>
+	</div>
+</div>
