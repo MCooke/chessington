@@ -43,10 +43,10 @@ Your package will include:
 
 Wild Winter Adventures start from just £89 for a family of four. Packages are available on the following dates:
 
-<strong>1st — 3rd, 9th, 10th, 16th, 17th, 23rd, 24th, 30th and 31st January 
+1st — 3rd, 9th, 10th, 16th, 17th, 23rd, 24th, 30th and 31st January 
 
 6th, 7th, 27th and 28th February 
 
-6th and 7th March</strong> 
+6th and 7th March 
 
 <small>Terms and conditions apply. Subject to availability. Wild Winter Adventure price based on 2 adults and 2 children (aged 12 years and under) sharing a standard family room in the Chessington Safari Hotel and does not include dinner. Reservations must be paid in full at time of booking and are non-transferable or refundable. The Chessington World of Adventures Theme Park is closed during this period. Rides and attractions will not be open. All details are correct at the time of writing.</small>
