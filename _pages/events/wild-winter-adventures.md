@@ -2,6 +2,7 @@
 layout: default
 published: true
 title: Wild Winter Adventures
+permalink: /offers/test.html
 ---
 
 ## Wild Winter Adventures 
