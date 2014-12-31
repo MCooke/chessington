@@ -1,3 +1,10 @@
+---
+layout: default
+published: true
+title: Father Christmas Sleepovers
+permalink: "events/chessington-father-christmas-sleepovers.html"
+---
+
 # Father Christmas Sleepovers at Chessington
 
 ![Father Christmas Sleepovers](http://chessingtonholidays.merlinbreaks.co.uk/images/masterChessington/events/banners/chessington-father-christmas-sleepovers.png)
