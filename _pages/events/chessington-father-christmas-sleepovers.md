@@ -2,7 +2,7 @@
 layout: default
 published: true
 title: Father Christmas Sleepovers
-permalink: ""
+permalink: "events/chessington-father-christmas-sleepovers.html"
 ---
 
 # Father Christmas Sleepovers at Chessington
