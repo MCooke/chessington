@@ -1063,7 +1063,7 @@ mark,
 .text-right {
   text-align: right; }
 
-.text-center, .product {
+.text-center {
   text-align: center; }
 
 .text-justify {
@@ -5492,24 +5492,41 @@ button.close {
 
 .product-small {
   height: 15vh; }
+  .product-small .product_title-center {
+    margin-top: 5vh; }
 
 .product-medium {
   height: 30vh; }
 
 .product-large {
   height: 50vh;
-  padding-top: 15vh;
-  background-color: #128bc9; }
-  .product-large .product_title {
-    margin: 0; }
+  background-color: #128bc9;
+  padding: 14vh 0; }
+  .product-large:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 120px;
+    width: 90px;
+    background: url("images/parrot.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
 
 .product_cta {
   bottom: 5px;
   right: 5px;
   position: absolute; }
 
-.product-hotel .product_title {
-  margin-top: 3vh; }
+.product_title {
+  margin: 0;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  margin-top: 3vh;
+  text-align: left; }
+  .product_title-center {
+    text-align: center; }
 
 .product_body {
   position: absolute;
@@ -5597,7 +5614,7 @@ button.close {
   font-weight: 600;
   src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
 body {
-  margin-top: 70px;
+  margin-top: 50px;
   font-family: 'Open Sans';
   -webkit-font-smoothing: antialiased; }
 
