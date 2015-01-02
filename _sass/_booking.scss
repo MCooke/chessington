@@ -1,0 +1,93 @@
+.form-booking{
+	.container{
+	}
+}
+
+.form_group{
+	position: relative;
+	width: 100%;
+	margin: 10px 0;
+	display: inline-block;
+	float: left;
+	&-party, &-action{
+		width: 50%;
+	}
+}
+
+.group_item{
+	float: left;
+	&-suffix{
+		float: right;
+	}
+	&-select{
+		height: 32px;
+	}
+	&-description{
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		font-size: 0.7em;
+	}
+}
+
+
+@media (min-width: $screen-sm-min) {
+	.form_group{
+		padding: 0 2px;
+		margin: 0;
+		float: left;
+		width: 20%;
+		.btn{
+			float: left;
+			// padding: 6px 8px;
+		}
+		&-party{
+			width: 23%;
+		}
+		&-action{
+			width: 15%;
+			float: right;
+		}
+	}
+
+	.group_item{
+		width: 100%;
+		float: left;
+		&-select{
+			-webkit-apperance: none;
+			height: 32px;
+		}
+	}
+
+	.form_group-suffix{
+		.group_item{
+			width: 70px;
+			line-height: 2em;
+			&-suffix{
+				display: inline-block;
+				float: right;
+				width: auto;
+			}
+		}
+	}
+
+	.form-control.form-control-ticket{
+		width: 120px;
+	}
+	input.form-control.form-control-date{
+		width: 80px;
+	}
+	.form-control.form-control-nights{
+		width: 80px;
+	}
+}
+
+// @media (max-width: $screen-xs-max){
+// 	.form-booking{
+// 		.container{
+// 			margin: 0;
+// 			padding: 0;
+// 			width: 100%;
+// 		}
+// 	}
+// }

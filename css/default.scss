@@ -5,6 +5,7 @@
 @import "includes";
 @import "product";
 @import "navbar";
+@import "booking";
 
 @font-face {
   font-family: 'Grilled Cheese';
@@ -49,4 +50,24 @@ body{
 h1, h2, h3, h4{
 	font-family: 'Grilled Cheese';
 	-webkit-font-smoothing: antialiased;
+}
+
+.bg-blue{
+	background: #128bc9;
+}
+
+.bg-purple{
+	background: #7b2a60;
+}
+
+.bg-red{
+	background: #bf1d1e;
+}
+
+.bg-green{
+	background: #32a040;
+}
+
+.bg-orange{
+	background: #c9790f;
 }

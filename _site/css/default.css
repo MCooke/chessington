@@ -5476,48 +5476,20 @@ button.close {
 .product {
   margin-bottom: 20px;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
-  color: #fafafa; }
-
-.bg-blue {
-  background: #128bc9; }
-
-.bg-purple {
-  background: #7b2a60; }
-
-.bg-red {
-  background: #bf1d1e; }
-
-.bg-green {
-  background: #32a040; }
+  color: #fafafa;
+  overflow: hidden; }
 
 .product-small {
-  height: 15vh; }
-  .product-small .product_title-center {
-    margin-top: 5vh; }
+  height: 80px;
+  padding: 10px 0; }
 
 .product-medium {
-  height: 30vh; }
+  height: 150px; }
 
 .product-large {
-  height: 50vh;
+  height: 250px;
   background-color: #128bc9;
-  padding: 14vh 0; }
-  .product-large:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 5px;
-    height: 120px;
-    width: 90px;
-    background: url("images/parrot.png");
-    background-size: 100%;
-    background-repeat: no-repeat; }
-
-.product_cta {
-  bottom: 5px;
-  right: 5px;
-  position: absolute; }
+  padding: 70px 0; }
 
 .product_title {
   margin: 0;
@@ -5528,22 +5500,77 @@ button.close {
   .product_title-center {
     text-align: center; }
 
-.product_body {
+.product-afterDisplay, .product-parrot:after, .product-meerkats:after, .product-toucan:before, .product-toucan:after {
+  content: "";
+  display: block;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 20vh;
-  width: 100%;
   background-size: 100%;
   background-repeat: no-repeat; }
 
+.product-parrot:after {
+  top: 0;
+  right: -15px;
+  height: 40vw;
+  width: 30vw;
+  background-image: url("images/parrot.png"); }
+
+.product-meerkats:after {
+  bottom: -20px;
+  right: -20px;
+  height: 140px;
+  width: 130px;
+  background-image: url("images/meerkats.png"); }
+
+.product-toucan:before {
+  background-image: url("images/plant-bottom-right.png"); }
+
+.product-toucan:after {
+  bottom: 0;
+  right: 0;
+  height: 85px;
+  width: 128px;
+  background-image: url("images/toucan.png"); }
+
+@media (min-width: 768px) {
+  .product-parrot:after {
+    display: none; }
+
+  .product-meerkats:after {
+    bottom: 0;
+    right: 0;
+    height: 146px;
+    width: 158px; }
+
+  .product-toucan:before {
+    bottom: 0;
+    right: 0;
+    height: 85px;
+    width: 128px; }
+
+  .product-toucan:after {
+    height: 111px;
+    width: 166px;
+    transform: scaleX(-1); } }
 .navbar-header {
-  z-index: 1; }
+  z-index: 2; }
+
+.navbar {
+  background-color: #bd1d1d;
+  border: none; }
+
+.offcanvas .navbar {
+  background-color: #911616; }
 
 .navbar_section {
-  height: 30px;
+  height: 50px;
   float: left;
   text-align: center; }
+  .navbar_section .btn {
+    color: white;
+    font-family: 'Grilled Cheese';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2em; }
 
 .navbar_section-menu {
   width: 25%; }
@@ -5560,6 +5587,12 @@ button.close {
     height: 110px; }
   .navbar_section-logo.small img {
     height: 60px; }
+
+.navbar_border-right {
+  border-right: 1px solid rgba(255, 255, 255, 0.5); }
+
+.navbar_border-left {
+  border-left: 1px solid rgba(255, 255, 255, 0.5); }
 
 .offcanvas {
   position: fixed;
@@ -5599,10 +5632,118 @@ button.close {
   -webkit-transform: translate3d(120%, 0, 0);
   transform: translate3d(120%, 0, 0); }
   .offcanvas_level.active {
-    -webkit-transform: translate3d(10%, 0, 0);
-    transform: translate3d(10%, 0, 0);
+    -webkit-transform: translate3d(5%, 0, 0);
+    transform: translate3d(5%, 0, 0);
     box-shadow: -10px 0px 25px 0px rgba(0, 0, 0, 0.5); }
 
+@media (min-width: 768px) {
+  .navbar_section-book {
+    float: right;
+    width: 15%; }
+    .navbar_section-book .btn {
+      height: 100%;
+      width: 100%;
+      margin: 0; }
+
+  .navbar_section-menu {
+    display: none; }
+
+  .navbar_section-logo {
+    float: left;
+    width: 20%; }
+
+  .offcanvas {
+    height: auto; }
+    .offcanvas .navbar {
+      display: none; }
+
+  .offcanvas-right {
+    padding: 10px 0;
+    z-index: 1;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+    .offcanvas-right.active {
+      -webkit-transform: translate3d(0, 50px, 0);
+      transform: translate3d(0, 50px, 0);
+      box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.5); }
+
+  .navbar-links {
+    position: fixed;
+    background: transparent;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 20%;
+    transform: none; }
+    .navbar-links .navbar {
+      display: none; }
+    .navbar-links li {
+      float: left;
+      margin-left: 3vw;
+      list-style-type: none;
+      background: transparent;
+      color: white; }
+      .navbar-links li a {
+        color: white;
+        font-family: 'Grilled Cheese';
+        text-transform: uppercase; } }
+.form_group {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+  display: inline-block;
+  float: left; }
+  .form_group-party, .form_group-action {
+    width: 50%; }
+
+.group_item {
+  float: left; }
+  .group_item-suffix {
+    float: right; }
+  .group_item-select {
+    height: 32px; }
+  .group_item-description {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    font-size: 0.7em; }
+
+@media (min-width: 768px) {
+  .form_group {
+    padding: 0 2px;
+    margin: 0;
+    float: left;
+    width: 20%; }
+    .form_group .btn {
+      float: left; }
+    .form_group-party {
+      width: 23%; }
+    .form_group-action {
+      width: 15%;
+      float: right; }
+
+  .group_item {
+    width: 100%;
+    float: left; }
+    .group_item-select {
+      -webkit-apperance: none;
+      height: 32px; }
+
+  .form_group-suffix .group_item {
+    width: 70px;
+    line-height: 2em; }
+    .form_group-suffix .group_item-suffix {
+      display: inline-block;
+      float: right;
+      width: auto; }
+
+  .form-control.form-control-ticket {
+    width: 120px; }
+
+  input.form-control.form-control-date {
+    width: 80px; }
+
+  .form-control.form-control-nights {
+    width: 80px; } }
 @font-face {
   font-family: 'Grilled Cheese';
   src: url("grilled-cheese.woff");
@@ -5634,3 +5775,18 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Grilled Cheese';
   -webkit-font-smoothing: antialiased; }
+
+.bg-blue {
+  background: #128bc9; }
+
+.bg-purple {
+  background: #7b2a60; }
+
+.bg-red {
+  background: #bf1d1e; }
+
+.bg-green {
+  background: #32a040; }
+
+.bg-orange {
+  background: #c9790f; }
