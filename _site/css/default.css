@@ -5596,9 +5596,14 @@ button.close {
   height: 150px; }
 
 .product-large {
-  height: 250px;
+  height: 280px;
   background-color: #128bc9;
   padding: 70px 0; }
+
+.product-usp {
+  height: 80px;
+  text-align: center;
+  padding-top: 5px; }
 
 .product_title {
   margin: 0;
@@ -5608,6 +5613,20 @@ button.close {
   text-align: left; }
   .product_title-center {
     text-align: center; }
+
+.product-uspTile {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Grilled Cheese';
+  text-transform: uppercase; }
+
+.product_footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Grilled Cheese';
+  text-transform: uppercase; }
 
 .product-afterDisplay, .product-parrot:after, .product-meerkats:after, .product-toucan:before, .product-toucan:after {
   content: "";
@@ -5948,3 +5967,6 @@ h1, h2, h3, h4 {
 
 .bg-orange {
   background: #c9790f; }
+
+.color_black {
+  color: black; }

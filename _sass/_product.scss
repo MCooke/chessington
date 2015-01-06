@@ -17,9 +17,15 @@
 }
 
 .product-large{
-	height: 250px;
+	height: 280px;
 	background-color: #128bc9; 
 	padding: 70px 0;
+}
+
+.product-usp{
+	height: 80px;
+	text-align: center;
+	padding-top: 5px;
 }
 
 .product_title{
@@ -33,6 +39,21 @@
 	&-center{
 		text-align: center;
 	}
+}
+
+.product-uspTile{
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Grilled Cheese';
+	text-transform: uppercase;
+}
+.product_footer{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Grilled Cheese';
+	text-transform: uppercase;
 }
 
 .product-afterDisplay{
