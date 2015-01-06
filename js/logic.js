@@ -12,7 +12,7 @@ $( document ).ready( function() {
 
 	$('#parkDate').datepicker({
 		onSelect: function(date){
-			$( '.offcanvas-datepicker' ).toggleClass('active');
+			$( '.offcanvas_level-datepicker' ).toggleClass('active');
 			$('#dateButton').text( date );
 			console.log("Hey");
 		}

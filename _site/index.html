@@ -4,10 +4,12 @@
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
 <link rel="stylesheet" href="/chessington/css/default.css">
-<script src="/chessington/js/jquery.min.js"></script>
+<!-- <script src="/chessington/js/jquery.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="/chessington/js/logic.js"></script>
 <!-- <script src="http://chessingtonholidays.merlinbreaks.co.uk/js/general/jquery.ui.datepicker.1.10.3.min.1383727424.js"></script> -->
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top navbar-header" role="navigation">
 	<div class="navbar_section navbar_section-menu navbar_border-right">
@@ -50,11 +52,30 @@
 			<li><a href="/chessington/events/wild-winter-adventures.html">Wild Winter Adventures</a></li>
 		
 	</ul> -->
+
 	<ul>
-		<li><a href="">Hotels</a></li>
-		<li><a href="">Offers</a></li>
-		<li><a href="">Events</a></li>
-		<li><a href="">Manage Booking</a></li>
+		<li class="navbar_link"><a href="/">HOME</a></li>
+		<li class="navbar_link">
+			<a class="do_open" data-open="#dropdown-offers">OFFERS</a>
+			<ul id="dropdown-offers" class="dropdown_menu">
+				<li><a href="/offers/early-booking-offer.html">Save up to 30%</a></li>
+			</ul>
+		</li>
+		<li class="navbar_link">
+			<a class="do_open" data-open="#dropdown-hotels">HOTELS</a>
+			<ul id="dropdown-hotels" class="dropdown_menu">
+				<li><a href="/hotels/chessington-safari-hotel.html">Safari Resort Hotel</a></li>
+				<li><a href="/hotels/chessington-azteca-hotel.html">Azteca Resort Hotel</a></li>
+				<li><a href="/hotels.html">Hotels near Chessington</a></li>
+			</ul>
+		</li>
+		<li class="navbar_link">
+			<a class="do_open" data-open="#dropdown-events">EVENTS</a>
+			<ul id="dropdown-events" class="dropdown_menu">
+				<li><a href="#">Wild Winter Adventures</a></li>
+			</ul>
+		</li>
+		<li class="navbar_link"><a href="#">MANAGE BOOKING</a></li>	
 	</ul>
 </nav>
 		<form class="form-inline form-booking offcanvas offcanvas-right offcanvas-book" role="form">
@@ -104,7 +125,7 @@
 			<div class="navbar_section navbar_section-logo small">
 			</div>
 			<div class="navbar_section navbar_section-book">
-				<button class="btn btn-blank do_open" data-open="offcanvas_level-datepicker" type="button">Back</button>
+				<button class="btn btn-blank do_open" data-open=".offcanvas_level-datepicker" type="button">Back</button>
 			</div>
 		</nav>
 		<div id="parkDate"></div>
@@ -216,7 +237,7 @@
 			<h2 class="product_title product_title-center text-uppercase">Kids go free</h2>
 		</section>
 		-->
-		<section class="product product-usp bg-red col-xs-12">
+		<section class="product product-usp bg-purple col-xs-12">
 			<p class="product_subtitle">For tickets only, opening times, directions and more, plan your visit at:</p>
 			<h2 class="product_title product_title-center text-uppercase"><a href="http://www.chessington.com/plan/plan-your-trip.aspx" target="_blank">Chessington.com</a></h2>
 		</section>

@@ -109,6 +109,24 @@
 }
 
 @media (min-width: $screen-sm-min) {
+	.dropdown_menu{
+		position: absolute;
+		display: none;
+		padding: 5px;
+		margin: 0;
+		background: rgb(189, 29, 29);
+		border-radius: 5px;
+		border: 1px solid white;
+		&.active{
+			display: block;
+		}
+		li{
+			padding: 0;
+			margin-left: 0;
+			list-style-type: none;
+		}
+	}
+
 	.navbar_section-book{
 		float: right;
 		width: 15%;
@@ -193,9 +211,9 @@
 		.navbar{
 			display: none;
 		}
-		li{
+		.navbar_link{
 			float: left;
-			margin-left: 3vw;
+			margin-left: 20px;
 			list-style-type: none;
 			background: transparent;
 			color: white;

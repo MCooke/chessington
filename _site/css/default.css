@@ -5587,6 +5587,8 @@ button.close {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
   color: #fafafa;
   overflow: hidden; }
+  .product a {
+    color: white; }
 
 .product-small {
   height: 80px;
@@ -5765,6 +5767,21 @@ button.close {
     box-shadow: -10px 0px 25px 0px rgba(0, 0, 0, 0.5); }
 
 @media (min-width: 768px) {
+  .dropdown_menu {
+    position: absolute;
+    display: none;
+    padding: 5px;
+    margin: 0;
+    background: #bd1d1d;
+    border-radius: 5px;
+    border: 1px solid white; }
+    .dropdown_menu.active {
+      display: block; }
+    .dropdown_menu li {
+      padding: 0;
+      margin-left: 0;
+      list-style-type: none; }
+
   .navbar_section-book {
     float: right;
     width: 15%; }
@@ -5841,13 +5858,13 @@ button.close {
     transform: none; }
     .navbar-links .navbar {
       display: none; }
-    .navbar-links li {
+    .navbar-links .navbar_link {
       float: left;
-      margin-left: 3vw;
+      margin-left: 20px;
       list-style-type: none;
       background: transparent;
       color: white; }
-      .navbar-links li a {
+      .navbar-links .navbar_link a {
         color: white;
         font-family: 'Grilled Cheese';
         text-transform: uppercase; } }
@@ -5978,6 +5995,3 @@ h1, h2, h3, h4 {
 
 .color_black {
   color: black; }
-
-a {
-  color: white; }
