@@ -1,17 +1,20 @@
 .form-booking{
-	.container{
+	// .btn{
+	// 	height: auto;
+	// 	width: auto;
+	// 	border: 1px solid black;
+	// 	padding: 0;
+	// }
+	label{
 	}
 }
 
 .form_group{
 	position: relative;
-	width: 100%;
 	margin: 10px 0;
 	display: inline-block;
 	float: left;
-	&-party, &-action{
-		width: 50%;
-	}
+	width: 100%;
 }
 
 .group_item{
@@ -20,6 +23,7 @@
 		float: right;
 	}
 	&-select{
+		width: auto;
 		height: 32px;
 	}
 	&-description{
@@ -28,41 +32,57 @@
 		left: 0;
 		font-size: 0.7em;
 	}
+	&-label{
+		line-height: 2em;
+		margin-right: 10px;
+	}
 }
 
+.btn-stepper{
+	height: 24px;
+	width: 24px;
+	padding: 2px;
+	line-height: 1em;
+	&-right{
+
+	}
+}
 
 @media (min-width: $screen-sm-min) {
 	.form_group{
-		padding: 0 2px;
-		margin: 0;
+		padding: 0;
+		margin: 0 6px;
 		float: left;
-		width: 20%;
+		width: auto;
 		.btn{
 			float: left;
 			// padding: 6px 8px;
 		}
 		&-party{
-			width: 23%;
 		}
 		&-action{
-			width: 15%;
 			float: right;
+		}
+		&-partyComp{
+			width: 100%;
+			padding: 0 5px;
+			margin: 0;
 		}
 	}
 
 	.group_item{
-		width: 100%;
 		float: left;
 		&-select{
+			width: 150px;
 			-webkit-apperance: none;
-			height: 32px;
+		}
+		&-description{
+			display: none;
 		}
 	}
 
 	.form_group-suffix{
 		.group_item{
-			width: 70px;
-			line-height: 2em;
 			&-suffix{
 				display: inline-block;
 				float: right;

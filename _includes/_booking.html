@@ -10,6 +10,7 @@
 	</nav>
 	<div class="container">
 		<div class="form_group">
+			<label type="text" class="group_item visible-xs">Choose your package!</label>
 			<select class="btn btn-default group_item group_item-select" id="ticketType" placeholder="Ticket Type">
 				<option value="">Kids Go Free</option>
 				<option value="">Father Christmas Sleepover</option>
@@ -17,89 +18,106 @@
 		</div>
 		<div class="form_group">
 			<label class="visible-xs group_item" for="">Pick your date:</label>
-			<button type="button" class="btn btn-default group_item group_item-suffix do_open" id="parkDate" data-open=".offcanvas-datepicker">2nd December <i class="fa fa-calendar"></i></button>
+			<button id="dateButton" type="button" class="btn btn-default group_item group_item-suffix do_open" data-open=".offcanvas-datepicker">2nd December <i class="fa fa-calendar"></i></button>
 		</div>
 		<div class="form_group form_group-suffix">
-			<label type="text" class="group_item" placeholder="Nights">2 Nights</label>
+			<label type="text" class="group_item group_item-label">2 Nights</label>
 			<div class="group_item group_item-suffix">
-				<button class="btn btn-default" type="button">&minus;</button>
-				<button class="btn btn-default" type="button">&plus;</button>
+				<div class="btn-group" role="group" aria-label="...">
+					<button type="button" class="btn btn-default">&minus;</button>
+					<button type="button" class="btn btn-default">&plus;</button>
+				</div>
 			</div>
 		</div>
-		<div class="form_group form_group-party">
-			<button class="btn btn-default group_item do_open" type="button" data-open=".offcanvas-partycomp">2 Adults &amp; 2 Children</button>
+		<div class="form_group">
+			<button type="button" class="hidden-xs btn btn-default group_item group_item-suffix do_open" data-open=".offcanvas_level-partyComp">Who's Going?</button>
+			<button type="button" class="visible-xs btn btn-default btn-block group_item group_item-suffix do_open" data-open=".offcanvas_level-partyComp">Who's Going?</button>
 		</div>
 		<div class="form_group form_group-action">
-			<button type="submit" class="btn btn-primary group_item pull-right">Search <i class="fa fa-search"></i></button>
+			<button type="submit" class="hidden-xs btn btn-primary group_item pull-right">Search <i class="fa fa-search"></i></button>
+			<button type="submit" class="visible-xs btn btn-primary btn-lg btn-block group_item pull-right">Search <i class="fa fa-search"></i></button>	
 		</div>
-	</form>
-
-
+	</div>
 	<div class="offcanvas_level offcanvas-datepicker">
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="navbar_section navbar_section-menu">
 			</div>
-			<div class="navbar_section navbar_section-logo">
+			<div class="navbar_section navbar_section-logo small">
 			</div>
 			<div class="navbar_section navbar_section-book">
 				<button class="btn btn-blank do_open" data-open=".offcanvas-datepicker" type="button">Back</button>
 			</div>
 		</nav>
+		<div id="parkDate"></div>
+<!-- 		<button type="button" class="btn btn-lg btn-primary btn-block do_open" data-open=".offcanvas-datepicker">Done</button> -->
 	</div>
 
-
-	<div class="offcanvas_level offcanvas-partycomp">
-		<nav class="navbar navbar-default" role="navigation">
+	<div class="offcanvas_level offcanvas_level-partyComp">
+		<nav class="navbar navbar-default visible-xs" role="navigation">
 			<div class="navbar_section navbar_section-menu">
 			</div>
 			<div class="navbar_section navbar_section-logo">
 			</div>
 			<div class="navbar_section navbar_section-book">
-				<button class="btn btn-blank do_open" data-open=".offcanvas-partycomp" type="button">Done</button>
+				<button class="btn btn-blank do_open" data-open=".offcanvas_level-partyComp" type="button">Done</button>
 			</div>
 		</nav>
 		<div class="container">
-			<div class="form_group form_group-suffix">
-			<label type="text" class="group_item">2 Adults</label>
-			<small class="group_item group_item-description">Older than 16yrs</small>
+			<div class="form_group form_group-suffix form_group-partyComp">
+				<label type="text" class="group_item group_item-label">Adults</label>
+				<small class="group_item group_item-description">Older than 16yrs</small>
 				<div class="group_item group_item-suffix">
-					<button class="btn btn-default" type="button">&minus;</button>
-					<button class="btn btn-default" type="button">&plus;</button>
+					<div class="btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-default">&minus;</button>
+						<button type="button" class="btn btn-default">2</button>
+						<button type="button" class="btn btn-default">&plus;</button>
+					</div>
 				</div>
 			</div>
-			<div class="form_group form_group-suffix">
-				<label type="text" class="group_item">2 Children</label>
+			<div class="form_group form_group-suffix form_group-partyComp">
+				<label type="text" class="group_item group_item-label">Children</label>
 				<small class="group_item group_item-description">Between 3yrs and 11yrs </small>
 				<div class="group_item group_item-suffix">
-					<button class="btn btn-default" type="button">&minus;</button>
-					<button class="btn btn-default" type="button">&plus;</button>
+					<div class="btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-default">&minus;</button>
+						<button type="button" class="btn btn-default">2</button>
+						<button type="button" class="btn btn-default">&plus;</button>
+					</div>
 				</div>
 			</div>
-			<div class="form_group form_group-suffix">
-				<label type="text" class="group_item">0 Young Adults</label>
+			<div class="form_group form_group-suffix form_group-partyComp">
+				<label type="text" class="group_item group_item-label">Young Adults</label>
 				<small class="group_item group_item-description">Between 12yrs and 15yrs</small>
 				<div class="group_item group_item-suffix">
-					<button class="btn btn-default" type="button">&minus;</button>
-					<button class="btn btn-default" type="button">&plus;</button>
+					<div class="btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-default">&minus;</button>
+						<button type="button" class="btn btn-default">2</button>
+						<button type="button" class="btn btn-default">&plus;</button>
+					</div>
 				</div>
 			</div>
-			<div class="form_group form_group-suffix">
-				<label type="text" class="group_item">0 Infants</label>
+			<div class="form_group form_group-suffix form_group-partyComp">
+				<label type="text" class="group_item group_item-label">Infants</label>
 				<small class="group_item group_item-description">Between 2yrs and 3yrs</small>
 				<div class="group_item group_item-suffix">
-					<button class="btn btn-default" type="button">&minus;</button>
-					<button class="btn btn-default" type="button">&plus;</button>
+					<div class="btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-default">&minus;</button>
+						<button type="button" class="btn btn-default">2</button>
+						<button type="button" class="btn btn-default">&plus;</button>
+					</div>
 				</div>
 			</div>
-			<div class="form_group form_group-suffix">
-				<label type="text" class="group_item">0 Babies</label>
+			<div class="form_group form_group-suffix form_group-partyComp">
+				<label type="text" class="group_item group_item-label">Babies</label>
 				<small class="group_item group_item-description">Younger than 2yrs</small>
 				<div class="group_item group_item-suffix">
-					<button class="btn btn-default" type="button">&minus;</button>
-					<button class="btn btn-default" type="button">&plus;</button>
+					<div class="btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-default">&minus;</button>
+						<button type="button" class="btn btn-default">2</button>
+						<button type="button" class="btn btn-default">&plus;</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-</div>
+</form>

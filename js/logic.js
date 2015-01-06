@@ -9,4 +9,15 @@ $( document ).ready( function() {
 		$( '.navbar_section-logo' ).addClass( 'small' );
 		$( this ).off( 'click.small scroll.small ');
 	});
+
+	$('#parkDate').datepicker({
+		onSelect: function(date){
+			$( '.offcanvas-datepicker' ).toggleClass('active');
+			$('#dateButton').text( date );
+			console.log("Hey");
+		}
+	});
+	// $('#parkDate').datepicker.onSelect(function(){
+	// 	console.log("Hey");
+	// });
 } );

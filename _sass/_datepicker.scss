@@ -1,0 +1,21 @@
+.ui-datepicker table{
+	font-family: 'Open Sans';
+}
+.ui-datepicker-inline.ui-datepicker{
+	width: 100%;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	background: #fafafa;
+	height: 40px;
+}
+
+.ui-widget-content{
+	background: transparent;
+}
+
+.ui-widget-header{
+	@extend .btn;
+	@extend .btn-primary;
+	@extend .btn-block;
+}

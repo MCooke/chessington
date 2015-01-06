@@ -88,7 +88,7 @@
 .offcanvas_level{
 	position: fixed;
 	z-index: 1002;
-	width: 90%;
+	width: 91%;
 	height: 100%;
 	top: 0;
 
@@ -101,8 +101,8 @@
 	transform: translate3d(120%,0,0);
 	
 	&.active{
-		-webkit-transform: translate3d(5%,0,0);
-		transform: translate3d(5%,0,0);
+		-webkit-transform: translate3d(10%,0,0);
+		transform: translate3d(10%,0,0);
 
 		box-shadow: -10px 0px 25px 0px rgba(0,0,0,0.5);
 	}
@@ -134,12 +134,44 @@
 	.offcanvas-right{
 		padding: 10px 0;
 		z-index: 1;
+		height: 50px;
 		-webkit-transform: translate3d(0,-100%,0);
 		transform: translate3d(0,-100%,0);
 		&.active{
 			-webkit-transform: translate3d(0,50px,0);
 			transform: translate3d(0,50px,0);
 			box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.5);
+		}
+	}
+	.offcanvas_level{
+		-webkit-transform: translate3d(400px,-400px,0);
+		transform: translate3d(400px,-400px,0);
+		box-shadow: none;
+		&.active{
+			-webkit-transform: translate3d(400px,50px,0);
+			transform: translate3d(400px,50px,0);
+			box-shadow: none;
+		}
+	}
+	.offcanvas_booking{
+		position: relative;
+		background: white;
+		padding: 10px 0;
+		&.active{
+			-webkit-transform: translate3d(0, 50px, 0);
+			transform: translate3d(0, 50px, 0);
+		}
+	}
+	.offcanvas_level-partyComp{
+		width: 300px;
+		position: absolute;
+		height: auto;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		.container{
+			width: auto;
+			padding: 0;
+			margin: 0;
 		}
 	}
 	.navbar-links{
