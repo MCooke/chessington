@@ -5587,8 +5587,7 @@ button.close {
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
-  color: #fafafa;
-  overflow: hidden; }
+  color: #fafafa; }
   .product a {
     color: white; }
 
@@ -5625,6 +5624,7 @@ button.close {
 
 .product_footer {
   position: absolute;
+  width: 100%;
   bottom: 0;
   left: 0;
   text-align: center;
@@ -5632,7 +5632,7 @@ button.close {
   font-family: 'Grilled Cheese';
   text-transform: uppercase; }
 
-.product-afterDisplay, .product-parrot:after, .product-meerkats:after, .product-toucan:before, .product-toucan:after {
+.product-afterDisplay, .product-parrot:after, .product-parrot:before, .product-meerkats:after, .product-toucan:before, .product-toucan:after {
   content: "";
   display: block;
   position: absolute;
@@ -5664,6 +5664,26 @@ button.close {
   background-image: url("images/toucan.png"); }
 
 @media (min-width: 768px) {
+  .product_image {
+    position: absolute;
+    background-repeat: no-repeat; }
+
+  .product-parrot .product_image-1 {
+    background-image: url("images/productEvolution.png");
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: -45px;
+    transform: scaleX(-1); }
+  .product-parrot .product_image-2 {
+    background-image: url("images/productEvolution.png");
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: -45px; }
+
   .product-parrot:after {
     display: none; }
 
