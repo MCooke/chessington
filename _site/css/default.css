@@ -5587,7 +5587,8 @@ button.close {
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
-  color: #fafafa; }
+  color: #fafafa;
+  overflow: hidden; }
   .product a {
     color: white; }
 
@@ -5823,6 +5824,10 @@ button.close {
     height: auto; }
     .offcanvas .navbar {
       display: none; }
+
+  .offcanvas-left {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
 
   .offcanvas-right {
     padding: 10px 0;

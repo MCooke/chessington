@@ -149,6 +149,10 @@
 			display: none
 		}
 	}
+	.offcanvas-left{
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
 	.offcanvas-right{
 		padding: 10px 0;
 		z-index: 1;
