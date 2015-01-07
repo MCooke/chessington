@@ -9,17 +9,17 @@
 @import "datepicker";
 
 @font-face {
-  font-family: 'Grilled Cheese';
-    src: url("grilled-cheese.woff");
-  font-weight: bold;
-  font-style: normal;
+	font-family: 'Grilled Cheese';
+	src: url("grilled-cheese.woff");
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
 body{
@@ -76,3 +76,4 @@ h1, h2, h3, h4{
 .color_black{
 	color: black;
 }
+
