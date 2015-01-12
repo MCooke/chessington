@@ -82,15 +82,12 @@
 }
 
 .item_image{
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	width: 40%;
+	width: 100%;
 }
 
 @media (min-width: $screen-sm-min) {
 	.item_description{
-		width: 50%;
+		width: 100%;
 		&-full{
 			width: 100%;
 		}

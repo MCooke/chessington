@@ -3,7 +3,11 @@
 }
 
 .navbar{
-	background-color: rgb(189, 29, 29);
+	background-position: 0, 100%;
+	background-image: url('http://www.chessington.com/images/common/full/header-tile.png');
+	background-color: rgba(4, 255, 0, 0);
+	background-size: 100% 100%;
+	padding: 0 0 10px 0;
 	border: none;
 }
 
