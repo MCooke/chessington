@@ -1,152 +1,98 @@
-.product{
-	margin-bottom: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	
-	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
-	color: $grey50;
-	overflow: hidden;
-	a{
-		color: white;
+.tile{
+
+}
+
+.tile-promo{
+	position: relative;
+	height: 80vh;
+	background-image: url('http://www.chessington.com/images/homepage/features/large/azteca-hotel-summit-room-2015-offer-v2.jpg');
+	&2{
+		background-image: url('http://www.chessington.com/images/homepage/features/large/zoo-days.jpg');
 	}
 }
 
-.product-small{
-	height: 80px;
+.tile_cta{
+	position: absolute;
+	white-space: normal;
+	bottom: 20px;
+	margin: 0 auto;
+	left: 15%;
+	width: 70%;
+	color: white;
+	font-family: 'Grilled Cheese';
+	text-transform: uppercase;
+}
+
+.btn-primary{
+	border: 2px solid white;
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.32);
+	&:after{
+		float: right;
+		line-height: 0.5em;
+		font-family: "FontAwesome";
+		font-weight: normal !important;
+		font-size: 36px;
+		content: "\f105";
+	}
+}
+
+.tile-usp{
+	text-align: center;
+	color: $textBlack;
+}
+
+.tile_item-usp{
 	padding: 10px 0;
-}
-
-.product-medium{
-	height: 150px;
-}
-
-.product-large{
-	height: 250px;
-	background-color: #128bc9; 
-	padding: 90px 0;
-}
-
-.product-usp{
-	height: 90px;
-	text-align: center;
-	padding-top: 5px;
-}
-
-.product_title{
-	margin: 0;
-	
-	line-height: 0.9em;
-	text-transform: uppercase;
-
-	text-align: left;
-	&-center{
-		text-align: center;
+	border-top: 1px solid $grey400;
+	&Header{
+		padding: 5px 0;
 	}
 }
 
-.product-uspTile{
-	text-align: center;
-	font-size: 1.2em;
-	font-family: 'Grilled Cheese';
-	text-transform: uppercase;
+.tile_item{
+	margin-bottom: 15px;
 }
-.product_footer{
-	position: absolute;
+
+.tile-container{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 0 15px;
+}
+
+.item_container{
+	background: $lightGreen50;
+	position: relative;
+	padding: 1px 10px;
+}
+
+.raggedBackground{
+	background-image: url("http://www.chessington.com/images/common/ragged-mask-top-edge.png"),url("http://www.chessington.com/images/common/ragged-mask-right-edge.png"),url("http://www.chessington.com/images/common/ragged-mask-bottom-edge.png"),url("http://www.chessington.com/images/common/ragged-mask-left-edge.png") !important;
+	background-position: top left, top right, bottom left, top left !important;
+	background-repeat: repeat-x, repeat-y, repeat-x, repeat-y !important;
+}
+
+.item_title{
+	text-transform: uppercase;
+	color: rgb(189, 29, 29);
+}
+
+.item_description{
 	width: 100%;
-	bottom: 0;
-	left: 0;
-	text-align: center;
-	font-size: 1.2em;
-	font-family: 'Grilled Cheese';
-	text-transform: uppercase;
+	display: inline-block;
 }
 
-.product-afterDisplay{
-	content: "";
-	display: block;
+.item_image{
 	position: absolute;
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-.product-parrot:after{
-	@extend .product-afterDisplay;
-	top: 0;
-	right: -15px;
-	height: 40vw;
-	width: 30vw;
-	background-image: url('images/parrot.png');
-}
-
-.product-parrot:before{
-	@extend .product-afterDisplay;
-}
-
-.product-meerkats:after{
-	@extend .product-afterDisplay;
-	bottom: -20px;
-	right: -20px;
-	height: 140px;
-	width: 130px;
-	background-image: url('images/meerkats.png');
-}
-
-.product-toucan:before{
-	@extend .product-afterDisplay;
-	background-image: url('images/plant-bottom-right.png');
-}
-
-.product-toucan:after{
-	@extend .product-afterDisplay;
-	bottom: 0;
-	right: 0;
-	height: 85px;
-	width: 128px;
-	background-image: url('images/toucan.png');
+	top: 15px;
+	right: 15px;
+	width: 40%;
 }
 
 @media (min-width: $screen-sm-min) {
-	.product_image{
-		position: absolute;
-		background-repeat: no-repeat;
-	}
-	.product-parrot .product_image{
-		&-1{
-			background-image: url("images/productEvolution.png");
-			height: 300px;
-			width: 200px;
-			position: absolute;
-			top: 0;
-			left: -45px;
-			transform: scaleX(-1);
+	.item_description{
+		width: 50%;
+		&-full{
+			width: 100%;
 		}
-		&-2{
-			background-image: url("images/productEvolution.png");
-			height: 300px;
-			width: 200px;
-			position: absolute;
-			top: 0;
-			right: -45px;
-		}
-	}
-	.product-parrot:after{
-		display: none;
-	}
-	.product-meerkats:after{
-		bottom: 0;
-		right: 0;
-		height: 146px;
-		width: 158px;
-	}
-	.product-toucan:before{
-		bottom: 0;
-		right: 0;
-		height: 85px;
-		width: 128px;
-	}
-	.product-toucan:after{
-		height: 111px;
-		width: 166px;
-		transform: scaleX(-1);
 	}
 }

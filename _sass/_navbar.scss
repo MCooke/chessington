@@ -109,6 +109,14 @@
 }
 
 @media (min-width: $screen-sm-min) {
+	body{
+		margin-top: 0;
+	}
+	.navbar{
+		width: 100%;
+		position: relative;
+		margin-bottom: 15px;
+	}
 	.dropdown_menu{
 		position: absolute;
 		display: none;
@@ -154,24 +162,26 @@
 		transform: translate3d(0,0,0);
 	}
 	.offcanvas-right{
+		position: relative;
+		transform: translate3d(0, 0, 0);
 		padding: 10px 0;
 		z-index: 1;
-		height: 50px;
-		-webkit-transform: translate3d(0,-100%,0);
-		transform: translate3d(0,-100%,0);
-		&.active{
-			-webkit-transform: translate3d(0,50px,0);
-			transform: translate3d(0,50px,0);
-			box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.5);
-		}
+		height: auto;
+		// -webkit-transform: translate3d(0,-100%,0);
+		// transform: translate3d(0,-100%,0);
+		// &.active{
+		// 	-webkit-transform: translate3d(0,50px,0);
+		// 	transform: translate3d(0,50px,0);
+		// 	box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.5);
+		// }
 	}
 	.offcanvas_level{
-		-webkit-transform: translate3d(400px,-400px,0);
-		transform: translate3d(400px,-400px,0);
+		-webkit-transform: translate3d(400px,-500px,0);
+		transform: translate3d(400px,-500px,0);
 		box-shadow: none;
 		&.active{
-			-webkit-transform: translate3d(400px,50px,0);
-			transform: translate3d(400px,50px,0);
+			-webkit-transform: translate3d(400px,110px,0);
+			transform: translate3d(400px,110px,0);
 			box-shadow: none;
 		}
 	}
@@ -180,17 +190,17 @@
 		background: white;
 		padding: 10px 0;
 		&.active{
-			-webkit-transform: translate3d(0, 50px, 0);
-			transform: translate3d(0, 50px, 0);
+			-webkit-transform: translate3d(0, 110px, 0);
+			transform: translate3d(0, 110px, 0);
 		}
 	}
 	.offcanvas_level-datepicker{
-		-webkit-transform: translate3d(150px,-400px,0);
-		transform: translate3d(150px,-400px,0);
+		-webkit-transform: translate3d(150px,-500px,0);
+		transform: translate3d(150px,-500px,0);
 		width: 300px;
 		&.active{
-			-webkit-transform: translate3d(150px,50px,0);
-			transform: translate3d(150px,50px,0);
+			-webkit-transform: translate3d(150px,110px,0);
+			transform: translate3d(150px,110px,0);
 		}
 	}
 	.offcanvas_level-partyComp{
@@ -206,9 +216,9 @@
 		}
 	}
 	.navbar-links{
-		position: fixed;
+		position: absolute;
 		background: transparent;
-		margin-top: 10px;
+		top: 10px;
 		margin-left: 15%;
 		margin-right: 20%;
 		transform: none;

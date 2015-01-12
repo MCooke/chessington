@@ -1,0 +1,152 @@
+.product{
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
+	color: $grey50;
+	overflow: hidden;
+	a{
+		color: white;
+	}
+}
+
+.product-small{
+	height: 80px;
+	padding: 10px 0;
+}
+
+.product-medium{
+	height: 150px;
+}
+
+.product-large{
+	height: 250px;
+	background-color: #128bc9; 
+	padding: 90px 0;
+}
+
+.product-usp{
+	height: 90px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.product_title{
+	margin: 0;
+	
+	line-height: 0.9em;
+	text-transform: uppercase;
+
+	text-align: left;
+	&-center{
+		text-align: center;
+	}
+}
+
+.product-uspTile{
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Grilled Cheese';
+	text-transform: uppercase;
+}
+.product_footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Grilled Cheese';
+	text-transform: uppercase;
+}
+
+.product-afterDisplay{
+	content: "";
+	display: block;
+	position: absolute;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.product-parrot:after{
+	@extend .product-afterDisplay;
+	top: 0;
+	right: -15px;
+	height: 40vw;
+	width: 30vw;
+	background-image: url('images/parrot.png');
+}
+
+.product-parrot:before{
+	@extend .product-afterDisplay;
+}
+
+.product-meerkats:after{
+	@extend .product-afterDisplay;
+	bottom: -20px;
+	right: -20px;
+	height: 140px;
+	width: 130px;
+	background-image: url('images/meerkats.png');
+}
+
+.product-toucan:before{
+	@extend .product-afterDisplay;
+	background-image: url('images/plant-bottom-right.png');
+}
+
+.product-toucan:after{
+	@extend .product-afterDisplay;
+	bottom: 0;
+	right: 0;
+	height: 85px;
+	width: 128px;
+	background-image: url('images/toucan.png');
+}
+
+@media (min-width: $screen-sm-min) {
+	.product_image{
+		position: absolute;
+		background-repeat: no-repeat;
+	}
+	.product-parrot .product_image{
+		&-1{
+			background-image: url("images/productEvolution.png");
+			height: 300px;
+			width: 200px;
+			position: absolute;
+			top: 0;
+			left: -45px;
+			transform: scaleX(-1);
+		}
+		&-2{
+			background-image: url("images/productEvolution.png");
+			height: 300px;
+			width: 200px;
+			position: absolute;
+			top: 0;
+			right: -45px;
+		}
+	}
+	.product-parrot:after{
+		display: none;
+	}
+	.product-meerkats:after{
+		bottom: 0;
+		right: 0;
+		height: 146px;
+		width: 158px;
+	}
+	.product-toucan:before{
+		bottom: 0;
+		right: 0;
+		height: 85px;
+		width: 128px;
+	}
+	.product-toucan:after{
+		height: 111px;
+		width: 166px;
+		transform: scaleX(-1);
+	}
+}

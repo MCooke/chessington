@@ -2,11 +2,9 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+$textBlack: rgba(0,0,0,0.80);
+
 @import "includes";
-@import "product";
-@import "navbar";
-@import "booking";
-@import "datepicker";
 
 @font-face {
 	font-family: 'Grilled Cheese';
@@ -28,6 +26,10 @@ body{
 	-webkit-font-smoothing: antialiased;
 }
 
+.headInfo{
+	color: white;
+}
+
 .form-control-label{
 	background: transparent;
 	border: none;
@@ -37,6 +39,11 @@ body{
 .btn-blank{
 	margin-top: 8px;
 	background: none;
+}
+
+.btn-accent{
+	background: #bf1d1e;
+	color: white;
 }
 
 .input-group-btns{
@@ -81,3 +88,7 @@ h1, h2, h3, h4{
 	color: black;
 }
 
+@import "product";
+@import "navbar";
+@import "booking";
+@import "datepicker";
