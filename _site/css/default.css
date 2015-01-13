@@ -5643,11 +5643,19 @@ h1, h2, h3, h4 {
   color: black; }
 
 .tile-promo {
-  position: relative;
-  height: 400px;
-  background-image: url("http://www.chessington.com/images/homepage/features/large/azteca-hotel-summit-room-2015-offer-v2.jpg"); }
+  position: relative; }
   .tile-promo2 {
     background-image: url("http://www.chessington.com/images/homepage/features/large/zoo-days.jpg"); }
+
+.tile-promo-height {
+  height: 400px; }
+
+.tile-slick {
+  width: 100%;
+  overflow: hidden; }
+
+.slick_image {
+  width: 100%; }
 
 .tile_cta {
   position: absolute;

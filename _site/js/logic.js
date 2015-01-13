@@ -17,6 +17,11 @@ $( document ).ready( function() {
 			console.log("Hey");
 		}
 	});
+
+	$('.slick').slick({
+		slide: 'div',
+		dots: true
+	});
 	// $('#parkDate').datepicker.onSelect(function(){
 	// 	console.log("Hey");
 	// });

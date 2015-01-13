@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
+<link rel="stylesheet" href="/chessington/css/default.css">
+<!-- <script src="/chessington/js/jquery.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="/chessington/js/logic.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-header" role="navigation">
+	<div class="navbar_section navbar_section-menu navbar_border-right">
+		<button class="btn btn-blank do_open" data-open=".offcanvas-menu">Menu</button>
+	</div>
+	<div class="navbar_section navbar_section-logo">
+		<a href="/chessington/"><img src="http://www.chessington.com/images/common/logos/cwoa-header-logo.png" alt=""></a>
+	</div>
+	<div class="navbar_section navbar_section-book navbar_border-left">
+		<button class="btn btn-blank do_open visible-xs" data-open=".offcanvas-book">Book</button>
+		<a class="hidden-xs headInfo">
+			<div class="headInfo_tel">0835 934 9348</div>
+			<small class="headInfo_code">Agent Code: CCP01</small>
+		</a>
+	</div>
+</nav>
+
+<nav class="navbar-links offcanvas offcanvas-left offcanvas-menu">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-menu">Back</button>
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+		</div>
+	</nav>
+<!-- 	<ul>
+		
+			<li><a href="/chessington//offers/2nd-day-free.html">2nd Day Free</a></li>
+		
+			<li><a href="/chessington//about-us.html">About us</a></li>
+		
+			<li><a href="/chessington/events/african-adventures.html">African Adventures</a></li>
+		
+			<li><a href="/chessington/"></a></li>
+		
+			<li><a href="/chessington/events/chessington-father-christmas-sleepovers.html">Father Christmas Sleepovers</a></li>
+		
+			<li><a href="/chessington/"></a></li>
+		
+			<li><a href="/chessington/offers/early-booking-offer.html">Early Booking Offer</a></li>
+		
+			<li><a href="/chessington/"></a></li>
+		
+			<li><a href="/chessington/events/wild-winter-adventures.html">Wild Winter Adventures</a></li>
+		
+	</ul> -->
+
+	<ul>
+		<li class="navbar_link"><a href="/">HOME</a></li>
+		<li class="navbar_link">
+			<a class="do_open" data-open="#dropdown-offers">OFFERS</a>
+			<ul id="dropdown-offers" class="dropdown_menu">
+				<li><a href="/offers/early-booking-offer.html">Save up to 30%</a></li>
+			</ul>
+		</li>
+		<li class="navbar_link">
+			<a class="do_open" data-open="#dropdown-hotels">HOTELS</a>
+			<ul id="dropdown-hotels" class="dropdown_menu">
+				<li><a href="/hotels/chessington-safari-hotel.html">Safari Resort Hotel</a></li>
+				<li><a href="/hotels/chessington-azteca-hotel.html">Azteca Resort Hotel</a></li>
+				<li><a href="/hotels.html">Hotels near Chessington</a></li>
+			</ul>
+		</li>
+		<li class="navbar_link">
+			<a class="do_open" data-open="#dropdown-events">EVENTS</a>
+			<ul id="dropdown-events" class="dropdown_menu">
+				<li><a href="#">Wild Winter Adventures</a></li>
+			</ul>
+		</li>
+		<li class="navbar_link"><a href="#">MANAGE BOOKING</a></li>	
+	</ul>
+</nav>
+		<form class="form-inline form-booking offcanvas offcanvas-right offcanvas-book" role="form">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar_section navbar_section-menu">
+		</div>
+		<div class="navbar_section navbar_section-logo">
+		</div>
+		<div class="navbar_section navbar_section-book">
+			<button class="btn btn-blank do_open" data-open=".offcanvas-book" type="button">Back</button>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="form_group">
+			<label type="text" class="group_item visible-xs">Choose your package!</label>
+			<select class="btn btn-default group_item group_item-select" id="ticketType" placeholder="Ticket Type">
+				<option value="">Kids Go Free</option>
+				<option value="">Father Christmas Sleepover</option>
+			</select>
+		</div>
+		<div class="form_group">
+			<label class="visible-xs group_item" for="">Pick your date:</label>
+			<button id="dateButton" type="button" class="btn btn-default group_item group_item-suffix do_open" data-open=".offcanvas_level-datepicker">2nd December <i class="fa fa-calendar"></i></button>
+		</div>
+		<div class="form_group form_group-suffix">
+			<label type="text" class="group_item group_item-label">2 Nights</label>
+			<div class="group_item group_item-suffix">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default">&minus;</button>
+					<button type="button" class="btn btn-default">&plus;</button>
+				</div>
+			</div>
+		</div>
+		<div class="form_group">
+			<button type="button" class="hidden-xs btn btn-default group_item group_item-suffix do_open" data-open=".offcanvas_level-partyComp">Who's Going?</button>
+			<button type="button" class="visible-xs btn btn-default btn-block group_item group_item-suffix do_open" data-open=".offcanvas_level-partyComp">Who's Going?</button>
+		</div>
+		<div class="form_group form_group-action">
+			<button type="submit" class="hidden-xs btn btn-accent group_item pull-right">Search <i class="fa fa-search"></i></button>
+			<button type="submit" class="visible-xs btn btn-accent btn-lg btn-block group_item pull-right">Search <i class="fa fa-search"></i></button>	
+		</div>
+	</div>
+	<div class="offcanvas_level offcanvas_level-datepicker">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar_section navbar_section-menu">
+			</div>
+			<div class="navbar_section navbar_section-logo small">
+			</div>
+			<div class="navbar_section navbar_section-book">
+				<button class="btn btn-blank do_open" data-open=".offcanvas_level-datepicker" type="button">Back</button>
+			</div>
+		</nav>
+		<div id="parkDate"></div>
+<!-- 		<button type="button" class="btn btn-lg btn-primary btn-block do_open" data-open=".offcanvas-datepicker">Done</button> -->
+	</div>
+
+	<div class="offcanvas_level offcanvas_level-partyComp">
+		<nav class="navbar navbar-default visible-xs" role="navigation">
+			<div class="navbar_section navbar_section-menu">
+			</div>
+			<div class="navbar_section navbar_section-logo">
+			</div>
+			<div class="navbar_section navbar_section-book">
+				<button class="btn btn-blank do_open" data-open=".offcanvas_level-partyComp" type="button">Done</button>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="form_group form_group-suffix form_group-partyComp">
+				<label type="text" class="group_item group_item-label">Adults</label>
+				<small class="group_item group_item-description">Older than 16yrs</small>
+				<div class="group_item group_item-suffix">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default">&minus;</button>
+						<button type="button" class="btn btn-default">2</button>
+						<button type="button" class="btn btn-default">&plus;</button>
+					</div>
+				</div>
+			</div>
+			<div class="form_group form_group-suffix form_group-partyComp">
+				<label type="text" class="group_item group_item-label">Children</label>
+				<small class="group_item group_item-description">Between 3yrs and 11yrs </small>
+				<div class="group_item group_item-suffix">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default">&minus;</button>
+						<button type="button" class="btn btn-default">2</button>
+						<button type="button" class="btn btn-default">&plus;</button>
+					</div>
+				</div>
+			</div>
+			<div class="form_group form_group-suffix form_group-partyComp">
+				<label type="text" class="group_item group_item-label">Young Adults</label>
+				<small class="group_item group_item-description">Between 12yrs and 15yrs</small>
+				<div class="group_item group_item-suffix">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default">&minus;</button>
+						<button type="button" class="btn btn-default">2</button>
+						<button type="button" class="btn btn-default">&plus;</button>
+					</div>
+				</div>
+			</div>
+			<div class="form_group form_group-suffix form_group-partyComp">
+				<label type="text" class="group_item group_item-label">Infants</label>
+				<small class="group_item group_item-description">Between 2yrs and 3yrs</small>
+				<div class="group_item group_item-suffix">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default">&minus;</button>
+						<button type="button" class="btn btn-default">2</button>
+						<button type="button" class="btn btn-default">&plus;</button>
+					</div>
+				</div>
+			</div>
+			<div class="form_group form_group-suffix form_group-partyComp">
+				<label type="text" class="group_item group_item-label">Babies</label>
+				<small class="group_item group_item-description">Younger than 2yrs</small>
+				<div class="group_item group_item-suffix">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default">&minus;</button>
+						<button type="button" class="btn btn-default">2</button>
+						<button type="button" class="btn btn-default">&plus;</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+		
+    <div class="tile tile-container container">
+	<div class="row">
+		<h1>Chessington Azteca Hotel</h1>
+	</div>
+</div>
+<div class="tile tile-promo tile-slick slick">
+	<div>
+		<img src="http://chessingtonholidays.merlinbreaks.co.uk/images/responsiveChessington/hotel/CHEDDA/large/discoveryBunk.jpg" alt="" class="slick_image">
+	</div>
+	<div>
+		<img src="http://chessingtonholidays.merlinbreaks.co.uk/images/responsiveChessington/hotel/CHEDDA/large/chessington-azteca-hotel-discovery-room-room.jpg" alt="" class="slick_image">
+	</div>
+</div>
+<div class="tile tile-usp container">
+	<small class="tile_item-uspHeader col-xs-12">Offical Chessington <span class="hidden-xs">World of Adventures </span>Short Breaks include;</small>
+	<div class="tile_item-usp col-xs-12 col-sm-4">Hotel &amp; Ticket</div>
+	<div class="tile_item-usp col-xs-12 col-sm-4">Free Breakfast</div>
+	<div class="tile_item-usp col-xs-12 col-sm-4">2nd Day Free</div>
+</div>
+<div class="tile tile-container container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quibusdam obcaecati illo delectus, quasi ex, explicabo eaque dolore eum saepe quod minus dignissimos culpa nostrum necessitatibus maxime similique? Repudiandae, voluptatum!</p>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<ul>
+				<li>The Thing</li>
+				<li>The Thing</li>
+				<li>The Thing</li>
+				<li>The Thing</li>
+				<li>The Thing</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<section id="general" class="modal_general">
+		<h2 id="general_title">General</h2>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral1" data-category="Hotel More Info" data-action="FAQ" data-label="When can I check in and check out? ">
+						When can I check in and check out? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral1" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					The earliest check in time is 3pm, and the latest check out time is 11am. Please note you can check in at the hotel any time after 3pm, you are not required to check in at the hotel upon your arrival to the park. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral2" data-category="Hotel More Info" data-action="FAQ" data-label="    Can I leave my luggage at the hotel? ">
+						Can I leave my luggage at the hotel? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral2" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					There is a luggage drop service available at the Chessington Azteca Hotel. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral3" data-category="Hotel More Info" data-action="FAQ" data-label="  Is there a pool? ">
+						Is there a pool? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral3" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					Yes, there is a splash play zone located within Savannah Splash, as well as a swimming pool, sauna, whirlpool and gym. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral4" data-category="Hotel More Info" data-action="FAQ" data-label="  Where can I park? ">
+						Where can I park? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral4" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					There is free on site parking available to all guests. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral5" data-category="Hotel More Info" data-action="FAQ" data-label="  What is there for the kids to do? ">
+						What is there for the kids to do? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral5" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					Children will love staying at the Azteca Hotel right next to Chessington World of Adventures. Fun filled activities include: <br> <span class="listItem">•</span> Savannah Splash water play zone <br> <span class="listItem">•</span> Entertainment from the Rangers Club <br> <span class="listItem">•</span> Movie Club! <br> <span class="listItem">•</span> Animal Meet and Greets <br> <span class="listItem">•</span> Exclusive evening access to Wanyama Village and Reserve (April to mid September) <br> <span class="listItem">•</span> Get up close to real life monkeys in the AMAZU Treetop Adventure <br> <span class="listItem">•</span> PLUS - meet some of the stars from Madagascar! <br> <span class="listItem">•</span> Character breakfasts with dressed up staff 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral6" data-category="Hotel More Info" data-action="FAQ" data-label="  What facilities are there for babies/infants? ">
+						What facilities are there for babies/infants? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral6" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					Little ones are well cared for at the Azteca Hotel. Facilities for babies and infants include: <br> <span class="listItem">•</span> Bottle warming service <br> <span class="listItem">•</span> Highchairs in the restaurant <br> <span class="listItem">•</span> Cots (limited availability) <br> <span class="listItem">•</span> Swimming nappies (for sale in the leisure club) 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral7" data-category="Hotel More Info" data-action="FAQ" data-label="  What else is there to do at the hotel? ">
+						What else is there to do at the hotel? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral7" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					There's lots to do at the Chessington Azteca Hotel. Other facilities include: <br> <span class="listItem">•</span> Splash pool <br> <span class="listItem">•</span> Swimming pool <br> <span class="listItem">•</span> Sauna <br> <span class="listItem">•</span> Steam room <br> <span class="listItem">•</span> Whirl pool <br> <span class="listItem">•</span> Gym 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral8" data-category="Hotel More Info" data-action="FAQ" data-label="  What extras does the hotel offer? ">
+						What extras does the hotel offer? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral8" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					Children will love staying in one of the Chessington Azteca Hotel's magical themed rooms, and getting up close to some amazing wildlife. With so much to do and explore, your little adventurers will love every minute. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral9" data-category="Hotel More Info" data-action="FAQ" data-label="  Is there Wifi? ">
+						Is there Wifi? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral9" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					Free Wifi is available throughout the Resort. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral10" data-category="Hotel More Info" data-action="FAQ" data-label="  What disabled facilities does the hotel offer? ">
+						What disabled facilities does the hotel offer? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral10" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					Accessible rooms are available. Please request one at the time of booking. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseGeneral11" data-category="Hotel More Info" data-action="FAQ" data-label="  How can I contact the hotel? ">
+						How can I contact the hotel? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseGeneral11" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					Contact the Chessington Holidays team on 0870 360 2639. <br> The hotel's address is: <br> Azteca Hotel <br> Leatherhead Road <br> Chessington <br> Surrey <br> KT9 2NE 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseFood1" data-category="Hotel More Info" data-action="FAQ" data-label="What can I get for breakfast? ">
+						What can I get for breakfast? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFood1" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					A Full English Breakfast is included as part of your package. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseFood2" data-category="Hotel More Info" data-action="FAQ" data-label="  What's the restaurant like? ">
+						What's the restaurant like? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFood2" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					The Temple Restaurant and Bar is a unique and interactive premium dining experience set in the heart of a mystical ancient temple, where a fountain that was once the life force of the jungle is protected by the wildlife that call it home. The Temple Restaurant and Bar is open for breakfast from 6:30am to 10:30am and for dinner between 6:30pm and 9:30pm (5:30pm and 9:30pm on weekends and school holidays). 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseFood3" data-category="Hotel More Info" data-action="FAQ" data-label="  Are there kids dining options? ">
+						Are there kids dining options? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFood3" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					The Temple Restaurant &amp; Bar is the perfect place for your little ones to eat dinner with a difference. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseFood4" data-category="Hotel More Info" data-action="FAQ" data-label="  Is there room service? ">
+						Is there room service? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFood4" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					Room service is available 24 hours a day at the Chessington Azteca Hotel. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseFood5" data-category="Hotel More Info" data-action="FAQ" data-label="      Are there any dining offers/promotions? ">
+						Are there any dining offers/promotions? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFood5" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					There are currently no dining offers or promotions. 
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="rooms" class="modal_rooms">
+		<h2 id="rooms_title">Rooms</h2>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseRoom1" data-category="Hotel More Info" data-action="FAQ" data-label="How is this room laid out? ">
+						How is this room laid out? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseRoom1" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					All rooms can sleep up to a maximum of 5 people, and will have a double bed, and a separate children's sleeping area consisting of a bunk bed with a pull out bed. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseRoom2" data-category="Hotel More Info" data-action="FAQ" data-label="  What facilities are there in my room? ">
+						What facilities are there in my room? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseRoom2" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					Your room at the Azteca Hotel will include: <br> <span class="listItem">•</span> Free Wifi <br> <span class="listItem">•</span> Tea and coffee making facilities <br> <span class="listItem">•</span> Iron and ironing board (on request) <br> <span class="listItem">•</span> Telephone <br> <span class="listItem">•</span> Hairdryer <br> <span class="listItem">•</span> Freeview TV <br> <span class="listItem">•</span> Pay per view movies <br> <span class="listItem">•</span> Complimentary toiletries 
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="map" class="modal_map">
+		<h2 id="maps_title">Map</h2>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseMap1" data-category="Hotel More Info" data-action="FAQ" data-label="How do I get there? ">
+						How do I get there? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseMap1" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					Chessington World of Adventures is situated on the A243, two miles from the A3 and M25 (junction 9 or 10). The Park is well signposted. <br> <br> If you're arriving by rail, the nearest train station is Chessington South Station, which is approximately a 10 minute walk from the Park. 
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionCHEDDA" href="#collapseMap2" data-category="Hotel More Info" data-action="FAQ" data-label="   How do I get around? ">
+						How do I get around? 
+					</a>
+				</h4>
+			</div>
+			<div id="collapseMap2" class="panel-collapse collapse" style="height: 0px;">
+				<div class="panel-body">
+					This hotel is situated on the resort, so there's no need to travel to the Park. 
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+    
+    <footer class="container">
+<p> <a href="/faqs.html" tip="Frequently Asked Questions" class=" sweetTitle">Frequently Asked Questions</a> | <a href="/about-us.html" tip="About Us" class=" sweetTitle">About Us</a> | <a href="/privacy.html" tip="Read more on our Privacy Policy" class=" sweetTitle">Privacy Policy</a> | <a href="/booking-terms-and-conditions.html" tip="Terms &amp; Conditions" class=" sweetTitle">Terms &amp; Conditions</a> | <a href="/affiliate-sign-up.html" tip="Chessington Holidays Affiliate Program" class=" sweetTitle">Affiliate Program</a> </p> 
+<small>&#169; 2014 All Rights Reserved </small>
+</footer>
+  </body>
+</html>
