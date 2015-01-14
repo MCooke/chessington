@@ -18,7 +18,7 @@ $( document ).ready( function() {
 		}
 	});
 
-	$('.slick-dots').slick({
+	$('.slick').slick({
 		slide: 'div',
 		dots: true
 	});
